@@ -1,0 +1,93 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "PackML_BaseModule_Monitor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_BaseModule_Monitor.usercontrol.json",
+      "id": "tchmi:project#/definitions/PackML_BaseModule_Monitor",
+      "type": "object"
+    },
+    "PackML_StateDisplay": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_StateDisplay.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_StateDisplay"
+    },
+    "PackML_ModeCommand": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_ModeCommand.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_ModeCommand"
+    },
+    "PackML_ModeDisplay": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_ModeDisplay.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_ModeDisplay"
+    },
+    "PackML_MainCycleControl": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_MainCycleControl.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_MainCycleControl"
+    },
+    "PackML_StateCommand": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_StateCommand.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_StateCommand"
+    },
+    "AxisBase_Monitor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Components\\AxisBase_Monitor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/AxisBase_Monitor"
+    },
+    "ComponentBase_Monitor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Components\\ComponentBase_Monitor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/ComponentBase_Monitor"
+    },
+    "Cylinder_Monitor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Components\\Cylinder_Monitor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Cylinder_Monitor"
+    },
+    "DigitalSensor_Monitor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Components\\DigitalSensor_Monitor.usercontrol.json",
+      "id": "tchmi:project#/definitions/DigitalSensor_Monitor",
+      "type": "object"
+    },
+    "PackML_StateDiagram": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_StateDiagram.usercontrol.json",
+      "id": "tchmi:project#/definitions/PackML_StateDiagram",
+      "type": "object"
+    }
+  }
+}

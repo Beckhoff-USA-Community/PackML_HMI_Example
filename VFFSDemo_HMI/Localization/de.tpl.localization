@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/LocalizationDescription.Schema.json",
+  "locale": "de",
+  "localizedText": {
+    "L_MachineOverview": "MachineOverview",
+    "L_Events": "Meldungen",
+    "L_Localization": "Lokalisierung",
+    "L_Theme": "Farbschema",
+    "L_Settings": "Einstellungen",
+    "L_PullWheels": "Der Pull Wheels",
+    "L_Sealer": "Die Sealer",
+    "L_Sensor": "Das Sensor",
+    "L_Unwind": "Das Unwind"
+  }
+}

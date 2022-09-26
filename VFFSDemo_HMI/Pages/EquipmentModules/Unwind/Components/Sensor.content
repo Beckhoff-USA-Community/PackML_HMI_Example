@@ -1,0 +1,12 @@
+﻿<div id="Unwind_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1166" data-tchmi-creator-viewport-height="762">
+
+  <div id="TcHmiContainer_Conveyor_20" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="16" data-tchmi-is-enabled="true" data-tchmi-bottom="16">
+    <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+      [
+      "background-container"
+      ]
+    </script>
+<div id="DigitalSensor_Monitor_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/Components/DigitalSensor_Monitor.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="60" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-height-mode="Content" data-tchmi-sensor="%s%PLC1.MAIN.VFFSDemo.Unwind.Sensor.DigitalSensor_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.Unwind.Sensor.ComponentBase_HMI%/s%">
+</div>
+</div>    
+</div>

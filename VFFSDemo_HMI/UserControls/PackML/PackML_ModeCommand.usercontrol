@@ -1,0 +1,393 @@
+﻿<div id="PMLModeCommand" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-zindex="0" data-tchmi-is-enabled="true">
+
+
+
+
+
+<div id="PMLMode_Command" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left="5" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="9" data-tchmi-bottom="5" data-tchmi-is-enabled="true" data-tchmi-text="%f%TcHmi.Functions.Beckhoff.EnumToString(%pp%CurrentMode%/pp%, %pp%ModeNames%/pp%)%/f%" data-tchmi-zindex="1" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center">
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "indicator-label",
+  "remove-disabled-greyout"
+]
+</script>
+
+
+</div>
+
+
+<div id="PMLModeCommand_Combobox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="5" data-tchmi-top-unit="px" data-tchmi-right="10" data-tchmi-bottom="5" data-tchmi-data-height="50" data-tchmi-max-list-height="250" data-tchmi-drop-down-horizontal-alignment="Center" data-tchmi-drop-down-category-horizontal-alignment="Center" data-tchmi-allow-text-input="false" data-tchmi-is-enabled="%pp%Enable%/pp%" data-tchmi-zindex="2" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{"top":3,"right":3,"bottom":3,"left":3}
+</script>
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "PMLModeCommand_Combobox.onSelectionChanged",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.Beckhoff.Log",
+        "fnParams": [
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/TcHmi.Functions.Beckhoff.Log.Level",
+            "value": "Warning"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%ctrl%PMLModeCommand_Combobox::SelectedValue%/ctrl%"
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%pp%Enable%/pp%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%pp%ModeCommand%/pp%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%ctrl%PMLModeCommand_Combobox::SelectedValue%/ctrl%"
+                },
+                "asyncWait": true,
+                "success": [
+                  {
+                    "objectType": "Function",
+                    "active": true,
+                    "fn": "TcHmi.Functions.Beckhoff.Log",
+                    "fnParams": [
+                      {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/TcHmi.Functions.Beckhoff.Log.Level",
+                        "value": "Warning"
+                      },
+                      {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "Symbol written successfully"
+                      }
+                    ],
+                    "asyncWait": true
+                  }
+                ],
+                "error": [
+                  {
+                    "objectType": "Function",
+                    "active": true,
+                    "fn": "TcHmi.Functions.Beckhoff.Log",
+                    "fnParams": [
+                      {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:framework#/definitions/TcHmi.Functions.Beckhoff.Log.Level",
+                        "value": "Warning"
+                      },
+                      {
+                        "objectType": "StaticValue",
+                        "valueType": "tchmi:general#/definitions/String",
+                        "value": "Error writing symbol"
+                      }
+                    ],
+                    "asyncWait": true
+                  }
+                ]
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.Log",
+                "fnParams": [
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/TcHmi.Functions.Beckhoff.Log.Level",
+                    "value": "Warning"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "Enable is true"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.Beckhoff.Log",
+                "fnParams": [
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:framework#/definitions/TcHmi.Functions.Beckhoff.Log.Level",
+                    "value": "Info"
+                  },
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "Enable is false"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%pp%CurrentMode%/pp%",
+    "actions": [
+      {
+        "objectType": "SwitchCase",
+        "active": true,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+          "symbolExpression": "%pp%CurrentMode%/pp%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "value": 0
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PMLMode_Command::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 0, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "value": 1
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PMLMode_Command::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(0, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "value": 2
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PMLMode_Command::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(200, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PMLMode_Command::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 150, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-src-data" type="application/json">
+[
+  {
+    "text": "%pp%ModeNames[1]%/pp%",
+    "value": 1.0
+  },
+  {
+    "text": "%pp%ModeNames[2]%/pp%",
+    "value": 2.0
+  },
+  {
+    "text": "%pp%ModeNames[3]%/pp%",
+    "value": 3.0
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+</div>
+</div>

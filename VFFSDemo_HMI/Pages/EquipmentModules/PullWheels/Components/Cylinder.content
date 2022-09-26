@@ -1,0 +1,12 @@
+﻿<div id="Conveyor_15" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-locked="False">
+
+  <div id="TcHmiContainer_Conveyor_19" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="16" data-tchmi-is-enabled="true" data-tchmi-bottom="16" data-tchmi-creator-locked="True">
+    <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+      [
+      "background-container"
+      ]
+    </script>
+<div id="AxisBase_Monitor_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/Components/Cylinder_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="60" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-cylinder="%s%PLC1.MAIN.VFFSDemo.PullWheels.PullWheelCylinder.Cylinder_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.PullWheels.PullWheelCylinder.ComponentBase_HMI%/s%">
+</div>
+</div>    
+</div>

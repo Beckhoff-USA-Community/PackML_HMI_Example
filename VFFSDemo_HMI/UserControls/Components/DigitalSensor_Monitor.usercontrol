@@ -1,0 +1,264 @@
+﻿
+<div id="DigitalSensor_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Visible">
+
+
+    <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-container"
+]
+</script>
+    <div id="DigitalSensor_Monitor_PopoutContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-top="0" data-tchmi-height-mode="Value" data-tchmi-height="%f%%ctrl%DigitalSensor_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%DigitalSensor_Monitor_ExpandButton::RenderedHeight%/ctrl%%/f%" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Visible">
+        <div id="DigitalSensor_Monitor_ExpandButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-icon="Imports/Images/arrow-bar-down-white.svg" data-tchmi-icon-height-unit="%" data-tchmi-icon-height="80" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-ignore-escape-sequences="false" data-tchmi-creator-visibility="Visible">
+            
+
+            <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+                [
+                {
+                "event": "DigitalSensor_Monitor_ExpandButton.onStatePressed",
+                "actions": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%DigitalSensor_Monitor_PopoutContainer::HeightMode%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/SizeModeWithContent",
+                "value": "Content"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%DigitalSensor_Monitor_PopoutContainer::Top%/ctrl%",
+                "value": {
+                "objectType": "FunctionExpression",
+                "functionExpression": "%ctrl%DigitalSensor_Monitor_StaticContainer::RenderedHeight%/ctrl%+1"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%DigitalSensor_Monitor_ExpandButton::Icon%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": "Imports/Images/arrow-bar-up-white.svg"
+                },
+                "asyncWait": true
+                }
+                ]
+                },
+                {
+                "event": "DigitalSensor_Monitor_ExpandButton.onStateReleased",
+                "actions": [
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%DigitalSensor_Monitor_PopoutContainer::Top%/ctrl%",
+                "value": {
+                "objectType": "FunctionExpression",
+                "functionExpression": "0"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%DigitalSensor_Monitor_PopoutContainer::HeightMode%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/SizeModeWithContent",
+                "value": "Value"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%DigitalSensor_Monitor_PopoutContainer::Height%/ctrl%",
+                "value": {
+                "objectType": "FunctionExpression",
+                "functionExpression": "%ctrl%DigitalSensor_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%DigitalSensor_Monitor_ExpandButton::RenderedHeight%/ctrl%"
+                },
+                "asyncWait": true
+                },
+                {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%DigitalSensor_Monitor_ExpandButton::Icon%/ctrl%",
+                "value": {
+                "objectType": "StaticValue",
+                "valueType": "tchmi:framework#/definitions/Path",
+                "value": "Imports/Images/arrow-bar-down-white.svg"
+                },
+                "asyncWait": true
+                }
+                ]
+                }
+                ]
+            </script>
+        </div>
+        <div id="DigitalSensor_Monitor_PopoutGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-cell-wrap="true" data-tchmi-bottom="%ctrl%DigitalSensor_Monitor_ExpandButton::RenderedHeight%/ctrl%" data-tchmi-is-enabled="true">
+            <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+                [
+                {
+                "height": 50.0,
+                "heightUnit": "px",
+                "heightMode": "Value",
+                "maxHeight": 100.0,
+                "maxHeightUnit": "%",
+                "minHeight": 50.0,
+                "minHeightUnit": "px",
+                "overflow": false
+                }
+                ]
+            </script>
+
+            <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "%",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "%",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+            
+<div id="DigitalSensor_Monitor_StandardModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Standard Mode" data-tchmi-width="75" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::StandardOperation%/pp%" data-tchmi-left="12.5" data-tchmi-top="2.5" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-button"
+]
+</script>
+</div>
+<div id="DigitalSensor_Monitor_SimulationModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-left="12.5" data-tchmi-left-unit="%" data-tchmi-text="Simulation Mode" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-width="75" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::SimulatedOperation%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-button"
+]
+</script>
+</div>
+</div>
+
+        
+    </div>
+    <div id="DigitalSensor_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="159" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Visible">
+
+        
+        <div id="DigitalSensor_Monitor_StaticGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="%ctrl%DigitalSensor_Monitor_Title::RenderedHeight%/ctrl%" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content">
+
+            <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "%",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+            <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+                [
+                {
+                "height": 1.0,
+                "heightUnit": "factor",
+                "heightMode": "Value",
+                "maxHeight": 100.0,
+                "maxHeightUnit": "%",
+                "minHeight": 50.0,
+                "minHeightUnit": "px",
+                "overflow": false
+                },
+                {
+                "height": 2.0,
+                "heightUnit": "px",
+                "heightMode": "Value",
+                "maxHeightUnit": "px",
+                "minHeightUnit": "px",
+                "overflow": false
+                }
+                ]
+            </script>
+
+            
+<div id="DigitalSensor_Monitor_BusyIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Active:" data-tchmi-creator-visibility="Visible" data-tchmi-grid-column-index="0" data-tchmi-indicator="%pp%Sensor::Status::Active%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+<div id="DigitalSensor_Monitor_ActiveTimeIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="1" data-tchmi-label="Active Time:" data-tchmi-unit="s" data-tchmi-data="%pp%Sensor::Status::TimeActive%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+<div id="DigitalSensor_Monitor_InactiveStateIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="2" data-tchmi-label="Inactive Time:" data-tchmi-data="%pp%Sensor::Status::TimeInactive%/pp%" data-tchmi-unit="s">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+</div>
+    <div id="DigitalSensor_Monitor_Title" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-height-mode="Value" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%Component::Config::Name%/pp%" data-tchmi-ignore-escape-sequences="false" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell",
+  "component-monitor-title"
+]
+</script>
+
+
+</div>
+</div>
+</div>

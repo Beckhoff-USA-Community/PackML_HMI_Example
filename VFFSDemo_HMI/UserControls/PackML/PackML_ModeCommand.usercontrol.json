@@ -1,0 +1,73 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-currentmode",
+      "displayName": "CurrentMode",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.SPT_PackMLBase.E_PMLUnitMode",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "CurrentMode",
+      "propertySetterName": "setCurrentMode",
+      "propertyGetterName": "getCurrentMode",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-enable",
+      "displayName": "Enable",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "defaultValue": false,
+      "defaultValueInternal": false,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Enable",
+      "propertySetterName": "setEnable",
+      "propertyGetterName": "getEnable",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-modecommand",
+      "displayName": "ModeCommand",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.SPT_PackMLBase.E_PMLUnitMode",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "ModeCommand",
+      "propertySetterName": "setModeCommand",
+      "propertyGetterName": "getModeCommand",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-modenames",
+      "displayName": "ModeNames",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.ARRAY_0..31_OF-STRING-80",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "ModeNames",
+      "propertySetterName": "setModeNames",
+      "propertyGetterName": "getModeNames",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.752.0/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

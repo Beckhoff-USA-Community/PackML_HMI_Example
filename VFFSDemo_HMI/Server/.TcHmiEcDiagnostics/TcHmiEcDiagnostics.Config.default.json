@@ -1,0 +1,21 @@
+{
+    "devices": {
+        "Device1": {
+            "enabled": true,
+            "masterNetId": "0.0.0.0.2.1",
+            "targetNetId": "0.0.0.0.1.1"
+        }
+    },
+    "vendorsOverwrite": {
+        "1": {
+            "devices": [],
+            "longName": "EtherCAT Technology Group",
+            "shortName": "ETG"
+        },
+        "2": {
+            "devices": [],
+            "longName": "Beckhoff Automation GmbH & Co. KG",
+            "shortName": "Beckhoff"
+        }
+    }
+}

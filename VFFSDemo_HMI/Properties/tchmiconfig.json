@@ -1,0 +1,347 @@
+﻿{
+  "$schema": "./../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "basePath": "./framework",
+  "scaleMode": "None",
+  "startupView": "Desktop.view",
+  "loginPage": "/Pages/LoginPage.html",
+  "tcHmiServer": {
+    "websocketIntervalTime": 500,
+    "websocketTimeout": 20000,
+    "websocketSystemTimeout": 60000,
+    "websocketSubscriptionMode": "Change"
+  },
+  "activeTheme": "SPT-Base",
+  "themes": {
+    "SPT-Base": {
+      "resources": [
+        {
+          "name": "Themes/SPT-Base/CustomControlClasses.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/SPT-Base/SPT-Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/SPT-Base/SPT-BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": []
+    }
+  },
+  "dependencyFiles": [
+    {
+      "name": "Fonts/Fonts.css",
+      "description": "",
+      "type": "Stylesheet"
+    },
+    {
+      "name": "NavigateToDetailPage.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "TrimDecimalNumber.js",
+      "description": "",
+      "type": "JavaScript"
+    }
+  ],
+  "userControls": [
+    {
+      "url": "UserControls/Components/AxisBase_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/Components/ComponentBase_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/Components/Cylinder_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/Components/DigitalSensor_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_BaseModule_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_MainCycleControl.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_ModeCommand.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_ModeDisplay.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_StateCommand.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_StateDiagram.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_StateDisplay.usercontrol"
+    },
+    {
+      "url": "UserControls/Utilities/ButtonWithIndicator.usercontrol"
+    },
+    {
+      "url": "UserControls/Utilities/ErrorIDDisplay.usercontrol"
+    },
+    {
+      "url": "UserControls/Utilities/LabelWithDataFeedback.usercontrol"
+    },
+    {
+      "url": "UserControls/Utilities/LabelWithDataFeedback2Row.usercontrol"
+    },
+    {
+      "url": "UserControls/Utilities/LabelWithIndicator.usercontrol"
+    },
+    {
+      "url": "UserControls/Utilities/LabelWithNoFeedback.usercontrol"
+    }
+  ],
+  "content": [
+    {
+      "url": "Pages/EquipmentModules/PullWheels/Components/Cylinder.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Left.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Right.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/PullWheels/PullWheels.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/Sealer/Components/SealBar.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/Sealer/Components/SealerAxis.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/Sealer/Sealer.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/Unwind/Components/Sensor.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/Unwind/Components/UnwindAxis.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/Unwind/UnwindEM.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Events.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MachineOverview.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/PackMLStateDiagram.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Settings.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    }
+  ],
+  "views": [
+    {
+      "url": "Desktop.view",
+      "preload": false,
+      "keepAlive": false,
+      "preloadBindings": false
+    }
+  ],
+  "userFunctions": [
+    {
+      "url": "NavigateToDetailPage.js"
+    },
+    {
+      "url": "TrimDecimalNumber.js"
+    }
+  ],
+  "symbols": {
+    "internal": {
+      "MediaQueryList": {
+        "value": [
+          {
+            "name": "Mobile",
+            "maxWidth": 800,
+            "minWidth": 0,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Left",
+                "displayOption": "burger_bottom"
+              }
+            ]
+          },
+          {
+            "name": "Tablet",
+            "maxWidth": 1280,
+            "minWidth": 800,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Left",
+                "displayOption": "icons"
+              }
+            ]
+          },
+          {
+            "name": "Desktop",
+            "maxWidth": 1920,
+            "minWidth": 1280,
+            "controlBehaviourList": [
+              {
+                "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+                "controlID": "Navigation_Left",
+                "displayOption": "full"
+              }
+            ]
+          }
+        ],
+        "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.MediaQueryList",
+        "persist": true,
+        "readonly": true
+      },
+      "AffectedControls": {
+        "value": [
+          {
+            "controlID": "Navigation_Left",
+            "position": "Left",
+            "defaultWidth": "320",
+            "defaultTop": "%ctrl%Header_Top::Height%/ctrl%",
+            "defaultBottom": "0",
+            "defaultLeft": "0"
+          },
+          {
+            "controlID": "Header_Top",
+            "position": "Top",
+            "defaultHeight": "80",
+            "defaultTop": "0",
+            "defaultLeft": "%ctrl%Navigation_Left::Width%/ctrl%",
+            "defaultRight": "0"
+          },
+          {
+            "controlID": "Region_Center",
+            "position": "Center",
+            "defaultTop": "%f%%ctrl%Header_Top::Height%/ctrl%+ 64%/f%",
+            "defaultBottom": "0",
+            "defaultLeft": "%ctrl%Navigation_Left::Width%/ctrl%",
+            "defaultRight": "0"
+          }
+        ],
+        "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControlList",
+        "persist": true,
+        "readonly": true
+      }
+    }
+  },
+  "trigger": [],
+  "actionTemplates": [],
+  "languages": {
+    "de": "Localization/de.localization",
+    "en": "Localization/en.localization"
+  },
+  "languageFallback": "",
+  "disableLoadingOptimization": false,
+  "creatorSettings": {
+    "viewport": {
+      "defaultWidth": 1920,
+      "defaultHeight": 1080
+    }
+  },
+  "binding": {
+    "symbolError": "Ignore"
+  },
+  "packages": [
+    {
+      "name": "Beckhoff.TwinCAT.HMI.BaseTemplate",
+      "basePath": "/Beckhoff.TwinCAT.HMI.BaseTemplate"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Controls",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Framework",
+      "basePath": "/framework"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.Functions",
+      "basePath": "/Beckhoff.TwinCAT.HMI.Functions"
+    },
+    {
+      "name": "Beckhoff.TwinCAT.HMI.ResponsiveNavigation",
+      "basePath": "/Beckhoff.TwinCAT.HMI.ResponsiveNavigation"
+    }
+  ],
+  "keyboardLayouts": [
+    {
+      "url": "KeyboardLayouts/German - compact.keyboard.json"
+    },
+    {
+      "url": "KeyboardLayouts/US - compact.keyboard.json"
+    }
+  ]
+}

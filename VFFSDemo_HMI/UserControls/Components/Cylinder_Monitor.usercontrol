@@ -1,0 +1,444 @@
+﻿<div id="AxisBase_Monitor_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible">
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-container"
+]
+</script>
+<div id="Cylinder_Monitor_PopoutContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-top="0" data-tchmi-height-mode="Value" data-tchmi-height="%f%%ctrl%Cylinder_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%Cylinder_Monitor_ExpandButton::RenderedHeight%/ctrl%%/f%" data-tchmi-zindex="1" data-tchmi-creator-visibility="Visible">
+<div id="Cylinder_Monitor_ExpandButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-bottom="1.7" data-tchmi-bottom-unit="%" data-tchmi-icon="Imports/Images/arrow-bar-down-white.svg" data-tchmi-icon-height-unit="%" data-tchmi-icon-height="80" data-tchmi-height="35">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "animate-all-properties",
+  "hardware-monitor-expand-button"
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Cylinder_Monitor_ExpandButton.onStatePressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Cylinder_Monitor_PopoutContainer::HeightMode%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/String",
+          "value": "Content"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Cylinder_Monitor_PopoutContainer::Top%/ctrl%",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "%ctrl%Cylinder_Monitor_StaticContainer::RenderedHeight%/ctrl%+1"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Cylinder_Monitor_ExpandButton::Icon%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Path",
+          "value": "Imports/Images/arrow-bar-up-white.svg"
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "Cylinder_Monitor_ExpandButton.onStateReleased",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Cylinder_Monitor_PopoutContainer::Top%/ctrl%",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "0"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Cylinder_Monitor_PopoutContainer::HeightMode%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/SizeModeWithContent",
+          "value": "Value"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Cylinder_Monitor_PopoutContainer::Height%/ctrl%",
+        "value": {
+          "objectType": "FunctionExpression",
+          "functionExpression": "%ctrl%Cylinder_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%Cylinder_Monitor_ExpandButton::RenderedHeight%/ctrl%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Cylinder_Monitor_ExpandButton::Icon%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Path",
+          "value": "Imports/Images/arrow-bar-down-white.svg"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_PopoutGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-cell-wrap="true" data-tchmi-bottom="%ctrl%Cylinder_Monitor_ExpandButton::RenderedHeight%/ctrl%" data-tchmi-is-enabled="true">
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "minHeight": 50.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeight": 50.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "%",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "animate-all-properties"
+]
+</script>
+<div id="Cylinder_Monitor_ResetButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Reset" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Component::Command::Reset%/pp%">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-button"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_PopoutGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-grid-row-index="1" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5">
+<div id="Cylinder_Monitor_BlankButton1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="2" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-grid-row-index="1">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-button"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_BlankButton2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="3" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-grid-row-index="1">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-button"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_RetractButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-grid-column-index="1" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Cylinder::Command::Retract%/pp%" data-tchmi-grid-row-index="1" data-tchmi-text="Retract" data-tchmi-is-enabled="%pp%Component::Status::HMIControlAvailable%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-button"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_ExtendButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-grid-column-index="0" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Cylinder::Command::Extend%/pp%" data-tchmi-grid-row-index="1" data-tchmi-text="Extend" data-tchmi-is-enabled="%pp%Component::Status::HMIControlAvailable%/pp%">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-button"
+]
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+</div>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "animate-all-properties"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-zindex="10" data-tchmi-is-enabled="true" data-tchmi-height="200" data-tchmi-creator-visibility="Visible">
+
+
+<div id="Cylinder_Monitor_StaticGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content" data-tchmi-top="%ctrl%Cylinder_Monitor_Title::RenderedHeight%/ctrl%">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "animate-all-properties"
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidth": 100.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
+[
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeight": 50.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  },
+  {
+    "height": 1.0,
+    "heightUnit": "factor",
+    "heightMode": "Value",
+    "maxHeightUnit": "px",
+    "minHeight": 50.0,
+    "minHeightUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="Cylinder_Monitor_StaticGrid_Row1" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true">
+<div id="Cylinder_Monitor_BusyIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Busy" data-tchmi-indicator="%pp%Component::Status::Busy%/pp%" data-tchmi-creator-locked="True">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_BlankIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-indicator="false" data-tchmi-creator-locked="True">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_Extended" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="3" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Extended" data-tchmi-indicator="%pp%Cylinder::Status::Extended%/pp%" data-tchmi-creator-locked="True">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+<div id="Cylinder_Monitor_Retracted" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="4" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Retrracted" data-tchmi-indicator="%pp%Cylinder::Status::Retracted%/pp%" data-tchmi-creator-locked="True">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="Cylinder_Monitor_ErrorIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Error" data-tchmi-indicator="%pp%Component::Status::Error%/pp%" data-tchmi-creator-locked="True">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+</div>
+<div id="Cylinder_Monitor_StaticGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-row-index="1" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-left="-1" data-tchmi-top="-1">
+<div id="Cylinder_Monitor_RetractTimeFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Retract Time:" data-tchmi-unit="ms" data-tchmi-grid-column-index="1" data-tchmi-data="%pp%Cylinder::Config::RetractTime%/pp%" data-tchmi-creator-locked="True" data-tchmi-decimalplaces="0">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="Cylinder_Monitor_ExtendTimeFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-decimalplaces="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback2Row.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Extend Time:" data-tchmi-data="%pp%Cylinder::Config::ExtendTime%/pp%" data-tchmi-unit="ms" data-tchmi-creator-locked="True">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+<div id="LabelWithDataFeedback_7" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-decimalplaces="1" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Utilities/LabelWithNoFeedback.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-locked="True" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+<div id="LabelWithDataFeedback_8" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-decimalplaces="1" data-tchmi-grid-column-index="3" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Utilities/LabelWithNoFeedback.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-locked="True" data-tchmi-is-enabled="true">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell"
+]
+</script>
+</div>
+</div>
+</div>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="Cylinder_Monitor_Title" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26.2" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%Component::Config::Name%/pp%" data-tchmi-creator-locked="True">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "component-monitor-cell",
+  "component-monitor-title"
+]
+</script>
+</div>
+</div>
+</div>

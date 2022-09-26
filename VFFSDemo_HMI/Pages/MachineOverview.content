@@ -1,0 +1,82 @@
+﻿
+<div id="MachineOverview" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1166" data-tchmi-creator-viewport-height="552">
+    <div id="MachineOverview_MainContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="16" data-tchmi-is-enabled="true" data-tchmi-bottom="0">
+        <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+            [
+            "background-container"
+            ]
+        </script>
+        <div id="MachineOverview_MonitorBanner" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseModule_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-zindex="1" data-tchmi-is-enabled="true" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.PackMLBaseModule_HMI%/s%">
+            <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+                [
+                "animate-all-properties"
+                ]
+            </script>
+        
+
+</div>
+        <div id="MachineOverview_MainContainer_Overview" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-zindex="10" data-tchmi-width-unit="px" data-tchmi-height-unit="px" data-tchmi-is-enabled="true" data-tchmi-top="%ctrl%MachineOverview_MonitorBanner::RenderedHeight%/ctrl%" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-left="0">
+
+            <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+                [
+                "overview-dot-container"
+                ]
+            </script>
+<div id="MachineOverview_OverviewImage" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-src="Images/MachineOverviewImages/VFFSDemo.png" data-tchmi-is-enabled="true" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-height="80" data-tchmi-opacity="1" data-tchmi-left="10" data-tchmi-left-unit="%">
+</div>
+<div id="TcHmiGrid_9" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-width="98" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-bottom="5" data-tchmi-bottom-unit="%" data-tchmi-left="1" data-tchmi-left-unit="%" data-tchmi-cell-wrap="true">
+<div id="MachineOverview_EMMonitor_PullWheels" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseModule_Monitor.usercontrol" data-tchmi-is-enabled="true" data-tchmi-height-mode="Content" data-tchmi-grid-column-index="0" data-tchmi-width-unit="%" data-tchmi-height-unit="px" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-detailpage="Pages/EquipmentModules/PullWheels/PullWheels.content"-1"" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.PullWheels.PackMLBaseModule_HMI%/s%" data-tchmi-creator-locked="True">
+</div>
+<div id="MachineOverview_EMMonitor_Sealer" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseModule_Monitor.usercontrol" data-tchmi-is-enabled="true" data-tchmi-height-mode="Content" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-grid-column-index="2" data-tchmi-height="100" data-tchmi-height-unit="px" data-tchmi-detailpage="Pages/EquipmentModules/Sealer/Sealer.content"-4"" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.Sealer.PackMLBaseModule_HMI%/s%" data-tchmi-creator-locked="True">
+</div>
+
+<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+[
+  {
+    "width": 10.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 0.1,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 10.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 0.1,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 10.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  }
+]
+</script>
+<div id="MachineOverview_EMMonitor_Sealer_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseModule_Monitor.usercontrol" data-tchmi-is-enabled="true" data-tchmi-height-mode="Content" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-grid-column-index="4" data-tchmi-height="100" data-tchmi-height-unit="px" -4""="" data-tchmi-detailpage="Pages/EquipmentModules/Unwind/UnwindEM.content" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.Unwind.PackMLBaseModule_HMI%/s%" data-tchmi-creator-locked="True">
+</div>
+</div>
+</div>
+    </div>
+</div>
