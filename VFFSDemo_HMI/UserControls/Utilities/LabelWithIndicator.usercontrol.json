@@ -1,0 +1,42 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-label",
+      "displayName": "Label",
+      "visible": true,
+      "type": "tchmi:general#/definitions/String",
+      "category": "",
+      "description": "",
+      "defaultValue": "TEST",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Label",
+      "propertySetterName": "setLabel",
+      "propertyGetterName": "getLabel",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-indicator",
+      "displayName": "Indicator",
+      "visible": true,
+      "type": "tchmi:general#/definitions/Boolean",
+      "category": "",
+      "description": "",
+      "defaultValue": false,
+      "defaultValueInternal": false,
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Indicator",
+      "propertySetterName": "setIndicator",
+      "propertyGetterName": "getIndicator",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

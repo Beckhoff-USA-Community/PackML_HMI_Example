@@ -1,0 +1,4 @@
+﻿.tchmi-class-remove-disabled-greyout.tchmi-control-disabled.TcHmi_Controls_System_TcHmiControl-disabled::after {
+    background-color: rgba(0, 0, 0, 0);
+    /*gets rid of gray-out overlay on disabled control*/
+}

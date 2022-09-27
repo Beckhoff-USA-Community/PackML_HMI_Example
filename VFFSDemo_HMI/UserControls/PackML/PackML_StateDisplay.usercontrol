@@ -1,0 +1,873 @@
+﻿<div id="PackML_StateDisplay" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-is-enabled="true">
+
+
+
+
+
+<div id="PackML_StateDisplay_StateLabel" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-creator-locked="True">
+
+
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%pp%CurrentState%/pp%",
+    "actions": [
+      {
+        "objectType": "SwitchCase",
+        "active": true,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLState",
+          "symbolExpression": "%pp%CurrentState%/pp%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 0
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Undefined"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 0, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 1
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Clearing"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 2
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Stopped"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 150, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Starting"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(150, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Idle"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(150, 150, 150, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 5
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Suspended"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 6
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Execute"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(0, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 7
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Stopping"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 150, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 8
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Aborting"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 0, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 9
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Aborted"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 0, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 10
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Holding"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 11
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Held"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 12
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Unholding"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(150, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 13
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Suspending"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 14
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Unsuspending"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(150, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 15
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Resetting"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(255, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 16
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Completing"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(150, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "value": 17
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "Complete"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
+                  "value": [
+                    {
+                      "color": {
+                        "color": "rgba(0, 255, 0, 0.7843137)"
+                      },
+                      "offsetX": 0.0,
+                      "offsetXUnit": "px",
+                      "offsetY": 0.0,
+                      "offsetYUnit": "px",
+                      "inset": false,
+                      "blur": 7.0,
+                      "blurUnit": "px",
+                      "spread": 3.0,
+                      "spreadUnit": "px"
+                    }
+                  ]
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "indicator-label"
+]
+</script>
+</div>
+
+
+</div>
