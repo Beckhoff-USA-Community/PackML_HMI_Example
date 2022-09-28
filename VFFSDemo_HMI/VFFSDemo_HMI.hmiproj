@@ -105,16 +105,16 @@
   <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <ItemGroup>
-    <Content Include="Images\MachineOverviewImages\PullWheels.png">
+    <Content Include="Images\MachineOverviewImages\CrossjawSeal.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Images\MachineOverviewImages\Sealer.png">
+    <Content Include="Images\MachineOverviewImages\Pullbelts.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\MachineOverviewImages\Unwind.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Images\MachineOverviewImages\VFFSDemo.png">
+    <Content Include="Images\MachineOverviewImages\VFFS_Overview.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\Arrow-0.png">
