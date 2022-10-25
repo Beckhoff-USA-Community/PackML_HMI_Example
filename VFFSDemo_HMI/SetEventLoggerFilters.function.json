@@ -1,0 +1,57 @@
+﻿{
+  "function": {
+    "name": "SetEventLoggerFilters",
+    "namespace": "TcHmi.Functions.ILBD_HMI",
+    "displayName": "SetEventLoggerFilters",
+    "description": "",
+    "waitMode": "Synchronous",
+    "category": "",
+    "returnValue": {
+      "type": "tchmi:general#/definitions/String"
+    },
+    "visible": true,
+    "injectContextObject": false,
+    "arguments": [
+      {
+        "name": "EventGrid",
+        "displayName": "EventGrid",
+        "type": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiEventGrid",
+        "description": "",
+        "defaultValue": "",
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      },
+      {
+        "name": "FilterPML",
+        "displayName": "FilterPML",
+        "type": "tchmi:general#/definitions/Boolean",
+        "description": "",
+        "defaultValue": false,
+        "required": true,
+        "bindable": true,
+        "restParameter": false,
+        "asReference": false,
+        "allowControlAttributeBindingOptions": false
+      }
+    ]
+  },
+  "$schema": "Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/FunctionDescription.Schema.json",
+  "apiVersion": 1,
+  "version": {
+    "full": "0.0.0.0",
+    "major": 0,
+    "minor": 0,
+    "revision": 0,
+    "build": 0
+  },
+  "dependencyFiles": [
+    {
+      "name": "SetEventLoggerFilters.js",
+      "type": "JavaScript",
+      "description": ""
+    }
+  ]
+}

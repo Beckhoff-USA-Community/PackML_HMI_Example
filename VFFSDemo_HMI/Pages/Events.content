@@ -8,15 +8,7 @@
     </script>
 
     <div id="TcHmiEventGrid_Events_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEventGrid" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="True" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="16" data-tchmi-bottom="16" data-tchmi-is-enabled="true" data-tchmi-allow-details-popup="true" data-tchmi-ignore-escape-sequences="false">
-      <script data-tchmi-target-attribute="data-tchmi-filter" type="application/json">
-[
-  {
-    "path": "alarmState",
-    "comparator": "==",
-    "value": 0
-  }
-]
-</script>
+      
       <script data-tchmi-target-attribute="data-tchmi-columns" type="application/json">
         [
         {
@@ -50,6 +42,25 @@
         "color": "None"
         }
       </script>
-    </div>
+    
+
+</div>
   </div>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Events.onAttached",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.VFFSDemo_HMI.SetEventBarFilter",
+        "fnParams": [],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>

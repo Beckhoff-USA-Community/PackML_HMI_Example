@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "./../Packages/Beckhoff.TwinCAT.HMI.Framework.12.756.1/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
+  "$schema": "./../Packages/Beckhoff.TwinCAT.HMI.Framework.12.758.8/runtimes/native1.12-tchmi/Schema/TchmiConfig.Schema.json",
   "basePath": "./framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
@@ -28,9 +28,22 @@
           "name": "Themes/SPT-Base/SPT-BaseStyle.css",
           "description": "",
           "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/SPT-Base/TcHmi.Controls.BaseTemplate.TcHmiNavigation/Style.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/SPT-Base/TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar/Style.css",
+          "description": "",
+          "type": "Stylesheet"
         }
       ],
-      "replacesThemeForControls": []
+      "replacesThemeForControls": [
+        "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+        "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar"
+      ]
     }
   },
   "dependencyFiles": [
@@ -48,6 +61,16 @@
       "name": "TrimDecimalNumber.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "SetEventBarFilter.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "SetEventLoggerFilters.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
@@ -62,6 +85,18 @@
     },
     {
       "url": "UserControls/Components/DigitalSensor_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_BaseSubModule_Buttons2_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_BaseModule_Buttons2_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_BaseModule_Buttons_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/PackML/PackML_BaseSubModule_Monitor.usercontrol"
     },
     {
       "url": "UserControls/PackML/PackML_BaseModule_Monitor.usercontrol"
@@ -104,6 +139,34 @@
     }
   ],
   "content": [
+    {
+      "url": "Pages/MachineOverview.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/MachineOverview.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/PackMLStateDiagram.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/ProductionStatus.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
     {
       "url": "Pages/EquipmentModules/PullWheels/Components/Cylinder.content",
       "preload": false,
@@ -182,20 +245,6 @@
       "preloadBindings": false
     },
     {
-      "url": "Pages/MachineOverview.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/PackMLStateDiagram.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
       "url": "Pages/Settings.content",
       "preload": false,
       "keepAlive": false,
@@ -216,6 +265,12 @@
       "url": "NavigateToDetailPage.js"
     },
     {
+      "url": "SetEventBarFilter.js"
+    },
+    {
+      "url": "SetEventLoggerFilters.js"
+    },
+    {
       "url": "TrimDecimalNumber.js"
     }
   ],
@@ -225,8 +280,8 @@
         "value": [
           {
             "name": "Mobile",
-            "maxWidth": 800,
-            "minWidth": 0,
+            "maxWidth": 500.0,
+            "minWidth": 0.0,
             "controlBehaviourList": [
               {
                 "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
@@ -237,8 +292,8 @@
           },
           {
             "name": "Tablet",
-            "maxWidth": 1280,
-            "minWidth": 800,
+            "maxWidth": 800.0,
+            "minWidth": 500.0,
             "controlBehaviourList": [
               {
                 "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
@@ -249,8 +304,8 @@
           },
           {
             "name": "Desktop",
-            "maxWidth": 1920,
-            "minWidth": 1280,
+            "maxWidth": 1920.0,
+            "minWidth": 800.0,
             "controlBehaviourList": [
               {
                 "controlType": "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
@@ -269,7 +324,7 @@
           {
             "controlID": "Navigation_Left",
             "position": "Left",
-            "defaultWidth": "320",
+            "defaultWidth": "65",
             "defaultTop": "%ctrl%Header_Top::Height%/ctrl%",
             "defaultBottom": "0",
             "defaultLeft": "0"
@@ -295,7 +350,8 @@
         "persist": true,
         "readonly": true
       }
-    }
+    },
+    "themedResources": {}
   },
   "trigger": [],
   "actionTemplates": [],

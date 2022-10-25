@@ -25,8 +25,10 @@
     <HmiCommunicationRouterPort>10103</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
-    <HmiRecent>1.12.756.1</HmiRecent>
-    <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
+    <HmiRecent>1.12.758.8</HmiRecent>
+    <HmiServerNodeAdvancedView>True</HmiServerNodeAdvancedView>
+    <PinVersion>True (Version 1.12.758.8)</PinVersion>
+    <HmiServerNodeAdvancedSettingsView>True</HmiServerNodeAdvancedSettingsView>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -144,6 +146,15 @@
     <Content Include="Imports\Images\ArrowUR.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Imports\Images\hand_operation_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\hand_operation_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\hand_operation_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Imports\Images\reset_achse_inactive.svg">
       <SubType>Content</SubType>
     </Content>
@@ -151,6 +162,15 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\safety-active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\scope_start_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\scope_start_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\scope_start_pressed.svg">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Imports\Images\start_inactive.svg">
@@ -178,6 +198,9 @@
     <Content Include="Pages\PackMLStateDiagram.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\ProductionStatus.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.default.json">
       <SubType>Content</SubType>
     </Content>
@@ -196,6 +219,20 @@
     <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Storage.json">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="SetEventBarFilter.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>SetEventBarFilter.js</DependentUpon>
+    </Content>
+    <Content Include="SetEventBarFilter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SetEventLoggerFilters.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>SetEventLoggerFilters.js</DependentUpon>
+    </Content>
+    <Content Include="SetEventLoggerFilters.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Themes\SPT-Base\Images\Background.png">
       <SubType>Content</SubType>
     </Content>
@@ -208,6 +245,15 @@
     <Content Include="Themes\SPT-Base\Images\Events\message_pressed.svg">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Themes\SPT-Base\Images\Placeholder\icons_home_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\Images\Placeholder\icons_home_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\Images\Placeholder\icons_home_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Themes\SPT-Base\Images\Placeholder\placeholder_active.svg">
       <SubType>Content</SubType>
     </Content>
@@ -215,6 +261,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Themes\SPT-Base\Images\Placeholder\placeholder_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\Images\Settings\SettingsOmacPackML_Active.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\Images\Settings\SettingsOmacPackML_Normal.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Themes\SPT-Base\Images\Settings\settings_active.svg">
@@ -233,6 +285,21 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Themes\SPT-Base\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Icons\icons_previous_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Icons\icons_previous_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar\Images\menu.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\SPT-Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar\Style.css">
       <SubType>Content</SubType>
     </Content>
     <Content Include="TrimDecimalNumber.function.json">
@@ -269,6 +336,34 @@
     <Content Include="UserControls\Components\DigitalSensor_Monitor.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>UserControls\Components\DigitalSensor_Monitor.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseSubModule_Buttons2_Monitor.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseSubModule_Buttons2_Monitor.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\PackML\PackML_BaseSubModule_Buttons2_Monitor.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons2_Monitor.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons2_Monitor.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\PackML\PackML_BaseModule_Buttons2_Monitor.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons_Monitor.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons_Monitor.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\PackML\PackML_BaseModule_Buttons_Monitor.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseSubModule_Monitor.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\PackML\PackML_BaseSubModule_Monitor.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\PackML\PackML_BaseSubModule_Monitor.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\PackML\PackML_BaseModule_Monitor.usercontrol">
       <SubType>Content</SubType>
@@ -427,6 +522,7 @@
     </Content>
     <Content Include="Pages\Events.content">
       <SubType>Content</SubType>
+      <Cache>True</Cache>
     </Content>
     <Content Include="Pages\Settings.content">
       <SubType>Content</SubType>
@@ -442,21 +538,27 @@
     </Content>
     <Content Include="Server\TcHmiLua\TcHmiLua.Config.default.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiLua\TcHmiLua.Config.remote.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiLua\TcHmiLua.Storage.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.default.json">
       <SubType>Content</SubType>
@@ -469,12 +571,15 @@
     </Content>
     <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
       <SubType>Content</SubType>
+      <Visible>True</Visible>
     </Content>
     <Content Include="Themes\SPT-Base\CustomControlClasses.css">
       <SubType>Content</SubType>
@@ -662,6 +767,10 @@
     <Folder Include="Themes\SPT-Base\Images\Events" />
     <Folder Include="Themes\SPT-Base\Images\Settings" />
     <Folder Include="Themes\SPT-Base\Images\Placeholder" />
+    <Folder Include="Themes\SPT-Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\" />
+    <Folder Include="Themes\SPT-Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Icons\" />
+    <Folder Include="Themes\SPT-Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar\" />
+    <Folder Include="Themes\SPT-Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar\Images\" />
     <Folder Include="UserControls" />
     <Folder Include="UserControls\Components" />
     <Folder Include="UserControls\PackML" />

@@ -8,13 +8,13 @@
     </script>
 <div id="SealBar_ComponentBase_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/Components/ComponentBase_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="60" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.Sealer.SealBar.ComponentBase_HMI%/s%">
 </div>
-<div id="TcHmiTextbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-auto-focus-out="false" data-tchmi-auto-select-text="false" data-tchmi-is-enabled="true" data-tchmi-text="%s%PLC1.MAIN.VFFSDemo.Sealer.SealBar._ActualTemperature%/s%">
+<div id="TcHmiTextbox" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="6" data-tchmi-width-unit="%" data-tchmi-auto-focus-out="false" data-tchmi-auto-select-text="false" data-tchmi-is-enabled="true" data-tchmi-text="%s%PLC1.MAIN.VFFSDemo.Sealer.SealBar._ActualTemperature%/s%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {"top":3,"right":3,"bottom":3,"left":3}
 </script>
 
 </div>
-<div id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-text="Seal Bar Temperature:" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="140" data-tchmi-width-unit="px" data-tchmi-word-wrap="true">
+<div id="TcHmiTextblock" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="40" data-tchmi-height-unit="px" data-tchmi-left-unit="%" data-tchmi-text="Seal Bar Temperature:" data-tchmi-top="35" data-tchmi-top-unit="%" data-tchmi-width="8" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-right="90">
 </div>
 <div id="TcHmiTrendLineChart" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTrendLineChart" data-tchmi-end="Latest" data-tchmi-height="50" data-tchmi-height-unit="%" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-start="PT2M" data-tchmi-width="60" data-tchmi-width-unit="%" data-tchmi-x-axis-name="x-axis 1" data-tchmi-x-sub-tick-steps="4" data-tchmi-y-sub-tick-steps="4" data-tchmi-top="%f%%ctrl%SealBar_ComponentBase_Monitor::RenderedHeight%/ctrl%+20%/f%" data-tchmi-show-menu-bar="true">
 <script data-tchmi-target-attribute="data-tchmi-y-axis" type="application/json">

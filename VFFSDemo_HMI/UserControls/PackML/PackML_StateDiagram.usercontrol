@@ -306,7 +306,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 2
         },
         "asyncWait": true
@@ -478,7 +478,7 @@
                 },
                 "compare2": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
                   "value": null
                 },
                 "compareOperator": "==",
@@ -623,7 +623,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 5
         },
         "asyncWait": true
@@ -940,7 +940,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 4
         },
         "asyncWait": true
@@ -1152,7 +1152,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 10
         },
         "asyncWait": true
@@ -1469,7 +1469,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 6
         },
         "asyncWait": true
@@ -1681,7 +1681,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 7
         },
         "asyncWait": true
@@ -2031,7 +2031,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 1
         },
         "asyncWait": true
@@ -2517,7 +2517,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 3
         },
         "asyncWait": true
@@ -2579,7 +2579,7 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLState",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
                   "symbolExpression": "%pp%PackMLModule::CurrentState%/pp%"
                 },
                 "compare2": {
@@ -2678,7 +2678,7 @@
         "active": true,
         "compare": {
           "objectType": "Symbol",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLState",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
           "symbolExpression": "%pp%PackMLModule::CurrentState%/pp%"
         },
         "cases": [
@@ -2729,7 +2729,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 9
         },
         "asyncWait": true
@@ -3079,7 +3079,7 @@
         "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
         "value": {
           "objectType": "StaticValue",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLCommand",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
           "value": 8
         },
         "asyncWait": true
@@ -3349,7 +3349,7 @@
         "active": true,
         "compare": {
           "objectType": "Symbol",
-          "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
           "symbolExpression": "%pp%PackMLModule::CurrentState%/pp%"
         },
         "cases": [
@@ -4168,12 +4168,12 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLCommand",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
                   "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLCommand",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
                   "value": 0
                 },
                 "compareOperator": "!=",
@@ -4187,7 +4187,7 @@
                 "symbolExpression": "%pp%PackMLModule::StateCommand%/pp%",
                 "value": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLCommand",
+                  "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLCommand",
                   "value": 0
                 },
                 "asyncWait": true

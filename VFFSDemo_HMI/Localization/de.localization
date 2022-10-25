@@ -10,6 +10,7 @@
     "L_PullWheels": "Der Pull Wheels",
     "L_Sealer": "Die Sealer",
     "L_Sensor": "Das Sensor",
-    "L_Unwind": "Das Unwind"
+    "L_Unwind": "Das Unwind",
+    "L_Blank": " "
   }
 }

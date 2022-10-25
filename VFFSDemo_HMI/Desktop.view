@@ -1,6 +1,6 @@
-﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-creator-viewport-width="1366" data-tchmi-creator-viewport-height="768">
+﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-creator-viewport-width="1366" data-tchmi-creator-viewport-height="768" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
   
-<div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="120" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-bottom="0" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-breadcrumb="%ctrl%Breadcrumb%/ctrl%" data-tchmi-is-enabled="true" data-tchmi-text-font-size="12">
+<div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="65" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-bottom="0" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-is-enabled="true" data-tchmi-text-font-size="12" data-tchmi-creator-locked="True" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-breadcrumb="%ctrl%Breadcrumb%/ctrl%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
 "divider",
@@ -9,74 +9,90 @@
 </script><script data-tchmi-target-attribute="data-tchmi-navigation-structure" type="application/json">
 [
   {
-    "name": "%l%L_MachineOverview%/l%",
+    "name": "%l%L_Blank%/l%",
     "content": "Pages/MachineOverview.content",
-    "icon_a": "Themes/SPT-Base/Images/Placeholder/placeholder_active.svg",
-    "icon_n": "Themes/SPT-Base/Images/Placeholder/placeholder_normal.svg",
-    "icon_p": "Themes/SPT-Base/Images/Placeholder/placeholder_pressed.svg"
+    "icon_a": "Themes/SPT-Base/Images/Placeholder/icons_home_active.svg",
+    "icon_n": "Themes/SPT-Base/Images/Placeholder/icons_home_normal.svg",
+    "icon_p": "Themes/SPT-Base/Images/Placeholder/icons_home_pressed.svg",
+    "subItem": [
+      {
+        "name": "%l%L_PullWheels%/l%",
+        "content": "Pages/EquipmentModules/PullWheels/PullWheels.content",
+        "subItem": [
+          {
+            "name": "Pull wheel Left",
+            "content": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Left.content"
+          },
+          {
+            "name": "Pull Wheel Right",
+            "content": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Right.content"
+          },
+          {
+            "name": "Pull Wheel Cylinder",
+            "content": "Pages/EquipmentModules/PullWheels/Components/Cylinder.content"
+          }
+        ]
+      },
+      {
+        "name": "%l%L_Sealer%/l%",
+        "content": "Pages/EquipmentModules/Sealer/Sealer.content",
+        "subItem": [
+          {
+            "name": "Seal Axis",
+            "content": "Pages/EquipmentModules/Sealer/Components/SealerAxis.content"
+          },
+          {
+            "name": "Seal Bar",
+            "content": "Pages/EquipmentModules/Sealer/Components/SealBar.content"
+          }
+        ]
+      },
+      {
+        "name": "%l%L_Unwind%/l%",
+        "content": "Pages/EquipmentModules/Unwind/UnwindEM.content",
+        "subItem": [
+          {
+            "name": "Unwind Axis",
+            "content": "Pages/EquipmentModules/Unwind/Components/UnwindAxis.content"
+          },
+          {
+            "name": "%l%L_Sensor%/l%",
+            "content": "Pages/EquipmentModules/Unwind/Components/Sensor.content"
+          }
+        ]
+      }
+    ]
   },
   {
-    "name": "%l%L_Events%/l%",
+    "name": "%l%L_Blank%/l%",
+    "content": "Pages/ProductionStatus.content",
+    "icon_a": "Imports/Images/scope_start_active.svg",
+    "icon_n": "Imports/Images/scope_start_normal.svg",
+    "icon_p": "Imports/Images/scope_start_pressed.svg"
+  },
+  {
+    "name": "%l%L_Blank%/l%",
+    "content": "Pages/Settings.content",
+    "icon_a": "Themes/SPT-Base/Images/Settings/SettingsOmacPackML_Active.png",
+    "icon_n": "Themes/SPT-Base/Images/Settings/SettingsOmacPackML_Normal.png",
+    "icon_p": "Themes/SPT-Base/Images/Settings/SettingsOmacPackML_Normal.png"
+  },
+  {
+    "name": "%l%L_Blank%/l%",
     "content": "Pages/Events.content",
     "icon_a": "Themes/SPT-Base/Images/Events/message_active.svg",
     "icon_n": "Themes/SPT-Base/Images/Events/message_normal.svg",
     "icon_p": "Themes/SPT-Base/Images/Events/message_pressed.svg"
   },
   {
-    "name": "%l%L_Settings%/l%",
-    "content": "Pages/Settings.content",
-    "icon_a": "Themes/SPT-Base/Images/Settings/settings_active.svg",
-    "icon_n": "Themes/SPT-Base/Images/Settings/settings_normal.svg",
-    "icon_p": "Themes/SPT-Base/Images/Settings/settings_pressed.svg"
-  },
-  {
-    "name": "%l%L_PullWheels%/l%",
-    "content": "Pages/EquipmentModules/PullWheels/PullWheels.content",
-    "subItem": [
-      {
-        "name": "Left Pull Wheel",
-        "content": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Left.content"
-      },
-      {
-        "name": "Pull Wheel Right",
-        "content": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Right.content"
-      },
-      {
-        "name": "Pull Wheel Cylinder",
-        "content": "Pages/EquipmentModules/PullWheels/Components/Cylinder.content"
-      }
-    ]
-  },
-  {
-    "name": "%l%L_Sealer%/l%",
-    "content": "Pages/EquipmentModules/Sealer/Sealer.content",
-    "subItem": [
-      {
-        "name": "Seal Axis",
-        "content": "Pages/EquipmentModules/Sealer/Components/SealerAxis.content"
-      },
-      {
-        "name": "Seal Bar",
-        "content": "Pages/EquipmentModules/Sealer/Components/SealBar.content"
-      }
-    ]
-  },
-  {
-    "name": "%l%L_Unwind%/l%",
-    "content": "Pages/EquipmentModules/Unwind/UnwindEM.content",
-    "subItem": [
-      {
-        "name": "Axis",
-        "content": "Pages/EquipmentModules/Unwind/Components/UnwindAxis.content"
-      },
-      {
-        "name": "Sensor",
-        "content": "Pages/EquipmentModules/Unwind/Components/Sensor.content"
-      }
-    ]
+    "name": "OMAC",
+    "content": "Pages/PackMLStateDiagram.content",
+    "icon_a": "Imports/Images/hand_operation_active.svg",
+    "icon_n": "Imports/Images/hand_operation_normal.svg",
+    "icon_p": "Imports/Images/hand_operation_pressed.svg"
   }
 ]
-</script></div><div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="55" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true">
+</script></div><div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="55" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
 "divider",
 "divider-top"
@@ -114,9 +130,17 @@
     "accessRights": [],
     "filter": [
       {
-        "path": "severity",
-        "comparator": ">=",
+        "path": "alarmState",
+        "comparator": "==",
         "value": 0
+      },
+      {
+        "logic": "AND"
+      },
+      {
+        "path": "domain",
+        "comparator": "==",
+        "value": "TcHmiEventLogger"
       }
     ],
     "targetRegion": "%ctrl%Region_Center%/ctrl%",
@@ -206,38 +230,36 @@
     "timeDisplayLayout": "TimeDateMultiLine"
   }
 ]
-</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-scrolling="Yes" data-tchmi-bottom="57" data-tchmi-right="0" data-tchmi-is-enabled="true" data-tchmi-top="94">
+</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-scrolling="Yes" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-is-enabled="true" data-tchmi-top="64" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div><div id="Breadcrumb" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiBreadcrumb" data-tchmi-height="24" data-tchmi-left="%f%%ctrl%Region_Center::Left%/ctrl%+ 16%/f%" data-tchmi-top="%f%%ctrl%Header_Top::Height%/ctrl%+ 5%/f%" data-tchmi-right="%f%%ctrl%Region_Center::Right%/ctrl%+ 16%/f%" data-tchmi-navigationcontrol="%ctrl%Navigation_Left%/ctrl%">
-
-</div><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div>><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
-{
- "event": "%ctrl%Desktop::RenderedWidth%/ctrl%", 
-"actions": [
-{
-"objectType": "Function",
-"active": true,
-"fn": "TcHmiResponsiveBehaviour",
-"fnParams": [
-{
-"objectType": "Symbol",
-"valueType": "tchmi:general#/definitions/String",
-"symbolExpression": "%i%MediaQueryList%/i%"
-},
-{
-"objectType": "Symbol",
-"valueType": "tchmi:general#/definitions/String",
-"symbolExpression": "%i%AffectedControls%/i%"
-}
-],
-"asyncWait": true
-}
+  {
+    "event": "%ctrl%Desktop::RenderedWidth%/ctrl%",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmiResponsiveBehaviour",
+        "fnParams": [
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%MediaQueryList%/i%"
+          },
+          {
+            "objectType": "Symbol",
+            "valueType": "tchmi:general#/definitions/String",
+            "symbolExpression": "%i%AffectedControls%/i%"
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
 ]
-}
-]
-</script><div id="Footer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%">
-<div id="Footer_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true">
+</script><div id="Footer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="55" data-tchmi-height-unit="px" data-tchmi-is-enabled="true" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-visibility="Visible">
+<div id="Footer_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
@@ -250,7 +272,25 @@
     "overflow": false
   },
   {
-    "width": 5.0,
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidthUnit": "px",
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 225.0,
+    "maxWidthUnit": "px",
+    "minWidth": 225.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
     "widthUnit": "factor",
     "widthMode": "Value",
     "maxWidthUnit": "px",
@@ -267,74 +307,8 @@
   }
 ]
 </script>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="1" id="CycleControl" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-target-user-control="UserControls/PackML/PackML_MainCycleControl.usercontrol" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-packmlmodule="%s%PLC1.MAIN.ControlSource_HMI.MainPMLControl_Simplified%/s%">
-</div>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" id="TcHmiButton_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="PackML Diagram" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true">
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
-  {
-    "event": "TcHmiButton_1.onPressed",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
-                  "symbolExpression": "%ctrl%PackMLStateDiagram::Top%/ctrl%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
-                  "value": 100.0
-                },
-                "compareOperator": "<",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%PackMLStateDiagram::Top%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
-                  "value": 100.0
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%PackMLStateDiagram::Top%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/MeasurementValue",
-                  "value": 25.0
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="2" id="CycleControl" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-target-user-control="UserControls/PackML/PackML_MainCycleControl.usercontrol" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-packmlmodule="%s%PLC1.MAIN.ControlSource_HMI.MainPMLControl_Simplified%/s%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 </div>
 </div>
-</div>
-<div id="PackMLStateDiagram" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-height="387" data-tchmi-height-unit="px" data-tchmi-left="28.1" data-tchmi-left-unit="%" data-tchmi-top="120" data-tchmi-top-unit="%" data-tchmi-width="702" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-target-content="Pages/PackMLStateDiagram.content" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value">
 </div>
 </div>

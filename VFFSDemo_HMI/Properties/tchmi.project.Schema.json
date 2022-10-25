@@ -88,6 +88,30 @@
       "frameworkUserControlConfig": "UserControls\\PackML\\PackML_StateDiagram.usercontrol.json",
       "id": "tchmi:project#/definitions/PackML_StateDiagram",
       "type": "object"
+    },
+    "PackML_BaseModule_Monitor_-_Copy": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_BaseModule_Monitor - Copy.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_BaseModule_Monitor_-_Copy"
+    },
+    "PackML_BaseModule_Buttons2_Monitor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_BaseModule_Buttons2_Monitor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_BaseModule_Buttons2_Monitor"
+    },
+    "PackML_BaseSubModule_Buttons2_Monitor": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\PackML\\PackML_BaseSubModule_Buttons2_Monitor.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/PackML_BaseSubModule_Buttons2_Monitor"
     }
   }
 }
