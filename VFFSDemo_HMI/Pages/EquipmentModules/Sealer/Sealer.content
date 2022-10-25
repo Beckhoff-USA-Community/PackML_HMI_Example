@@ -1,14 +1,14 @@
-﻿<div id="Sealer" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-is-enabled="true" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1166" data-tchmi-creator-viewport-height="552">
+﻿<div id="Sealer" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-is-enabled="true" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1166" data-tchmi-creator-viewport-height="552" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
-<div id="Sealer_MainContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-right="22" data-tchmi-bottom="16" data-tchmi-creator-locked="True">
-
-
+<div id="Sealer_MainContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-is-enabled="true" data-tchmi-right="16" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-height="90" data-tchmi-height-unit="%">
 
 
-<div id="Sealer_MainContainer_Overview" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-top="%ctrl%Sealer_MainContainer_MonitorBanner::RenderedHeight%/ctrl%" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-creator-locked="True">
-<div id="Sealer_MainContainer_OverviewImage" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-is-enabled="true" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-max-width="80" data-tchmi-max-width-unit="%" data-tchmi-max-height="80" data-tchmi-max-height-unit="%" data-tchmi-width="60" data-tchmi-width-unit="%" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="0" data-tchmi-height="60" data-tchmi-creator-locked="True" data-tchmi-top-unit="%" data-tchmi-top="2" data-tchmi-src="Images/MachineOverviewImages/CrossjawSeal.png" data-tchmi-height-unit="%">
+
+
+<div id="Sealer_MainContainer_Overview" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-top="%ctrl%PackML_SubModuleBase_Buttons2_Monitor_2::RenderedHeight%/ctrl%" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div id="Sealer_MainContainer_OverviewImage" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-is-enabled="true" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-max-width="80" data-tchmi-max-width-unit="%" data-tchmi-max-height="80" data-tchmi-max-height-unit="%" data-tchmi-width="60" data-tchmi-width-unit="%" data-tchmi-left="20" data-tchmi-left-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="0" data-tchmi-height="60" data-tchmi-creator-locked="True" data-tchmi-top-unit="%" data-tchmi-top="2" data-tchmi-src="Images/MachineOverviewImages/CrossjawSeal.png" data-tchmi-height-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 </div>
-<div id="Sealer_ComponentGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-bottom="2.5" data-tchmi-bottom-unit="%" data-tchmi-cell-wrap="true" data-tchmi-creator-locked="True">
+<div id="Sealer_ComponentGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-bottom="2.5" data-tchmi-bottom-unit="%" data-tchmi-cell-wrap="true" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
 [
   {
@@ -53,18 +53,101 @@
   }
 ]
 </script>
-<div id="Sealer_Axis_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Components/AxisBase_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-column-index="1" data-tchmi-bottom="0" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-axis="%s%PLC1.MAIN.VFFSDemo.Sealer.SealerAxis.AxisBase_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.Sealer.SealerAxis.ComponentBase_HMI%/s%" data-tchmi-creator-locked="True">
+<div id="Sealer_Axis_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Components/AxisBase_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-column-index="1" data-tchmi-bottom="0" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-axis="%s%PLC1.MAIN.VFFSDemo.Sealer.SealerAxis.AxisBase_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.Sealer.SealerAxis.ComponentBase_HMI%/s%" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 </div>
 <div id="SealBar_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="3" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Components/ComponentBase_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-bottom="0" data-tchmi-height-mode="Content" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.Sealer.SealBar.ComponentBase_HMI%/s%" data-tchmi-creator-locked="True">
 </div>
-</div>
-</div>
-</div>
-<div id="Sealer_MainContainer_MonitorBanner" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseModule_Monitor.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-zindex="1" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.Sealer.PackMLBaseModule_HMI%/s%">
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+<div id="SealerAxisButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="3" data-tchmi-opacity="0" data-tchmi-grid-column-index="1">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
-  "animate-all-properties"
+  {
+    "event": "SealerAxisButton.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/EquipmentModules/Sealer/Components/SealerAxis.content"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
 ]
 </script>
+</div>
+<div id="SealBarButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="3" data-tchmi-opacity="0" data-tchmi-grid-column-index="3" data-tchmi-top="%ctrl%SealBar_Monitor::RenderedTop%/ctrl%">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
+{
+  "color": "None"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "SealBarButton.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/ContentPath",
+          "value": "Pages/EquipmentModules/Sealer/Components/SealBar.content"
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+</div>
+<div id="TcHmiContainer_2" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="33" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width="60" data-tchmi-width-unit="px">
+<div id="TcHmiToggleButton_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Info Message" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.Sealer.InfoInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="False" data-tchmi-height="25" data-tchmi-min-height="10">
+</div>
+<div id="TcHmiToggleButton_7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Warn Message" data-tchmi-top="33" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.Sealer.WarnInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="True" data-tchmi-min-height="10">
+</div>
+<div id="TcHmiToggleButton_8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Error Message" data-tchmi-top="66" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.Sealer.ErrorInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="True" data-tchmi-min-height="10">
+</div>
+</div>
+</div>
+<div id="PackML_SubModuleBase_Buttons2_Monitor_2" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseSubModule_Buttons2_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.Sealer.PackMLBaseModule_HMI%/s%">
+</div>
 </div>
 </div>

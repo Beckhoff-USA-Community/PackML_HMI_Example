@@ -4,7 +4,7 @@
 
 
 
-<div id="PackML_StateDisplay_StateLabel" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-creator-locked="True">
+<div id="PackML_StateDisplay_StateLabel" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-creator-locked="True" data-tchmi-height="100" data-tchmi-height-unit="%">
 
 
 
@@ -20,14 +20,14 @@
         "active": true,
         "compare": {
           "objectType": "Symbol",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.Tc3_PackML_V2.E_PMLState",
+          "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
           "symbolExpression": "%pp%CurrentState%/pp%"
         },
         "cases": [
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 0
             },
             "actions": [
@@ -73,7 +73,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 1
             },
             "actions": [
@@ -119,7 +119,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 2
             },
             "actions": [
@@ -165,7 +165,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 3
             },
             "actions": [
@@ -211,7 +211,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 4
             },
             "actions": [
@@ -257,7 +257,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 5
             },
             "actions": [
@@ -303,7 +303,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 6
             },
             "actions": [
@@ -349,7 +349,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 7
             },
             "actions": [
@@ -395,7 +395,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 8
             },
             "actions": [
@@ -441,7 +441,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 9
             },
             "actions": [
@@ -487,7 +487,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 10
             },
             "actions": [
@@ -533,7 +533,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 11
             },
             "actions": [
@@ -579,7 +579,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 12
             },
             "actions": [
@@ -625,7 +625,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 13
             },
             "actions": [
@@ -671,7 +671,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 14
             },
             "actions": [
@@ -717,7 +717,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 15
             },
             "actions": [
@@ -763,7 +763,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 16
             },
             "actions": [
@@ -809,7 +809,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/JBT_ILBD.Tc3_PackML_V2.E_PMLState",
+              "valueType": "tchmi:server#/definitions/PLC1.Tc3_PackML_V2.E_PMLState",
               "value": 17
             },
             "actions": [

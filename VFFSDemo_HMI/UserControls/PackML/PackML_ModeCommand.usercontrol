@@ -186,14 +186,14 @@
         "active": true,
         "compare": {
           "objectType": "Symbol",
-          "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+          "valueType": "tchmi:server#/definitions/PLC1.E_PMLUnitMode",
           "symbolExpression": "%pp%CurrentMode%/pp%"
         },
         "cases": [
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "valueType": "tchmi:server#/definitions/PLC1.E_PMLUnitMode",
               "value": 0
             },
             "actions": [
@@ -228,7 +228,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "valueType": "tchmi:server#/definitions/PLC1.E_PMLUnitMode",
               "value": 1
             },
             "actions": [
@@ -263,7 +263,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "valueType": "tchmi:server#/definitions/PLC1.E_PMLUnitMode",
               "value": 2
             },
             "actions": [
@@ -298,7 +298,7 @@
           {
             "caseValue": {
               "objectType": "StaticValue",
-              "valueType": "tchmi:server#/definitions/ILBD_PLC.E_PMLUnitMode",
+              "valueType": "tchmi:server#/definitions/PLC1.E_PMLUnitMode",
               "value": 3
             },
             "actions": [

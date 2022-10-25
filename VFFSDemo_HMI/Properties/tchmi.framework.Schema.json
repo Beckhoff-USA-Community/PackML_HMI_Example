@@ -643,7 +643,7 @@
         "symbolExpression": {
           "title": "SymbolExpression",
           "type": "string",
-          "pattern": "^%(s|i|l|pp|tp|f|ctrl|ctx)%.+%\\1%$"
+          "pattern": "^%(s|i|l|pp|tp|f|ctrl|ctx|tr)%.+%\\1%$"
         }
       },
       "properties": {
@@ -896,12 +896,28 @@
       ]
     },
     "RecipeReference": {
+      "description": "Refers to one recipe of the server.",
       "type": "string",
       "minLength": 1
     },
+    "MultipleRecipeReferences": {
+      "description": "Refers to one or more recipe types of the server.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RecipeReference"
+      }
+    },
     "RecipeTypeReference": {
+      "description": "Refers to one recipe type of the server.",
       "type": "string",
       "minLength": 1
+    },
+    "MultipleRecipeTypeReferences": {
+      "description": "Refers to one or more recipe types of the server.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/RecipeTypeReference"
+      }
     },
     "ScaleMode": {
       "type": "string",
@@ -2462,7 +2478,7 @@
         "symbolExpression": {
           "title": "SymbolExpression",
           "type": "string",
-          "pattern": "^%(s|i|l|pp|tp|f|ctrl|ctx)%.+%\\1%$"
+          "pattern": "^%(s|i|l|pp|tp|f|ctrl|ctx|tr)%.+%\\1%$"
         },
         "controlSymbolExpression": {
           "title": "controlSymbolExpression",
@@ -2859,24 +2875,35 @@
                 "$ref": "tchmi:framework#/definitions/AccessConfig"
               },
               "text": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "targetRegion": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "targetContent": {
                 "anyOf": [
                   {
-                    "$ref": "tchmi:framework#/definitions/Path"
+                    "$ref": "tchmi:framework#/definitions/ContentPath"
                   },
                   {
                     "type": "string"
+                  },
+                  {
+                    "type": "null"
                   }
                 ]
               }
@@ -3004,8 +3031,8 @@
               },
               {
                 "category": "Specific",
-                "defaultValue": "",
-                "defaultValueInternal": "",
+                "defaultValue": null,
+                "defaultValueInternal": null,
                 "description": "Content path to the Messages page",
                 "displayName": "Target Content",
                 "displaypriority": 20,
@@ -3084,22 +3111,32 @@
               "accessRights": {
                 "$ref": "tchmi:framework#/definitions/AccessConfig"
               },
+              "messageFormat": {
+                "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiEventLine.MessageFormat"
+              },
               "filter": {
                 "$ref": "tchmi:server#/definitions/eventFilter"
               },
               "targetRegion": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "targetContent": {
                 "anyOf": [
                   {
-                    "$ref": "tchmi:framework#/definitions/Path"
+                    "$ref": "tchmi:framework#/definitions/ContentPath"
                   },
                   {
                     "type": "string"
+                  },
+                  {
+                    "type": "null"
                   }
                 ]
               }
@@ -3209,11 +3246,50 @@
               },
               {
                 "category": "Specific",
+                "description": "The parts that form the displayed event message.",
+                "displayName": "Message Format",
+                "displaypriority": 10,
+                "name": "messageFormat",
+                "defaultValue": [
+                  {
+                    "name": "timeRaised"
+                  },
+                  {
+                    "text": " | "
+                  },
+                  {
+                    "name": "domain"
+                  },
+                  {
+                    "text": " | "
+                  },
+                  {
+                    "name": "text"
+                  }
+                ],
+                "defaultValueInternal": []
+              },
+              {
+                "category": "Specific",
                 "description": "The filter for the displayed events.",
                 "displayName": "Filter",
                 "displaypriority": 20,
                 "name": "filter",
-                "defaultValue": [],
+                "defaultValue": [
+                  {
+                    "path": "domain",
+                    "comparator": "==",
+                    "value": "TcHmiEventLogger"
+                  },
+                  {
+                    "logic": "OR"
+                  },
+                  {
+                    "path": "domain",
+                    "comparator": "==",
+                    "value": "TcHmiAlarm"
+                  }
+                ],
                 "defaultValueInternal": []
               },
               {
@@ -3222,16 +3298,16 @@
                 "defaultValueInternal": null,
                 "description": "Target Region",
                 "displayName": "Target Region",
-                "displaypriority": 20,
+                "displaypriority": 30,
                 "name": "targetRegion"
               },
               {
                 "category": "Specific",
-                "defaultValue": "",
-                "defaultValueInternal": "",
+                "defaultValue": null,
+                "defaultValueInternal": null,
                 "description": "Content path to the Messages page",
                 "displayName": "Target Content",
-                "displaypriority": 20,
+                "displaypriority": 40,
                 "name": "targetContent"
               }
             ],
@@ -3320,9 +3396,13 @@
                 "$ref": "tchmi:framework#/definitions/MeasurementUnit"
               },
               "text": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "textPosition": {
@@ -3777,22 +3857,32 @@
                   },
                   {
                     "type": "string"
+                  },
+                  {
+                    "type": "null"
                   }
                 ]
               },
               "targetRegion": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "targetContent": {
                 "anyOf": [
                   {
-                    "$ref": "tchmi:framework#/definitions/Path"
+                    "$ref": "tchmi:framework#/definitions/ContentPath"
                   },
                   {
                     "type": "string"
+                  },
+                  {
+                    "type": "null"
                   }
                 ]
               }
@@ -3902,8 +3992,8 @@
               },
               {
                 "category": "Specific",
-                "defaultValue": "",
-                "defaultValueInternal": "",
+                "defaultValue": null,
+                "defaultValueInternal": null,
                 "description": "The displayed image",
                 "displayName": "Image",
                 "displaypriority": 20,
@@ -3929,8 +4019,8 @@
               },
               {
                 "category": "Specific",
-                "defaultValue": "",
-                "defaultValueInternal": "",
+                "defaultValue": null,
+                "defaultValueInternal": null,
                 "description": "Content path to the Messages page",
                 "displayName": "Target Content",
                 "displaypriority": 20,
@@ -4391,21 +4481,33 @@
                 "$ref": "tchmi:framework#/definitions/AccessConfig"
               },
               "adsRuntime": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "serverInterval": {
-                "type": [
-                  "number",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "serverDomain": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "stateImages": {
@@ -4418,9 +4520,13 @@
                 "$ref": "tchmi:framework#/definitions/MeasurementUnit"
               },
               "text": {
-                "type": [
-                  "string",
-                  "null"
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
                 ]
               },
               "textPosition": {
@@ -4756,6 +4862,13 @@
         "$ref": "tchmi:framework#/definitions/TcHmi.Controls.BaseTemplate.TcHmiNavigation.ListItem"
       }
     },
+    "TcHmi.Controls.BaseTemplate.TcHmiNavigation.ScrollbarStyle": {
+      "type": "string",
+      "enum": [
+        "Auto",
+        "None"
+      ]
+    },
     "TcHmi.Controls.Beckhoff.TcHmiButton": {
       "$schema": "http://json-schema.org/draft-04/schema",
       "type": "object",
@@ -4870,7 +4983,7 @@
             "displayPriority": 10,
             "description": "Color for this bars",
             "defaultValue": {
-              "color": "#4794da"
+              "color": "#2775be"
             },
             "defaultValueInternal": null
           },
@@ -4882,6 +4995,15 @@
             "description": "The name that is displayed in the legend.",
             "defaultValue": null,
             "defaultValueInternal": null
+          },
+          {
+            "name": "scaleFactor",
+            "category": "General",
+            "displayName": "Scale factor",
+            "displayPriority": 10,
+            "description": "Scales all values with this scale factor.",
+            "defaultValue": null,
+            "defaultValueInternal": 1
           }
         ],
         "properties": {
@@ -4890,6 +5012,9 @@
           },
           "legendName": {
             "type": "string"
+          },
+          "scaleFactor": {
+            "type": "number"
           }
         },
         "required": []
@@ -4900,9 +5025,20 @@
       "type": "string",
       "enum": [
         "Overlapped",
-        "Clustered"
+        "Clustered",
+        "Stacked"
       ],
       "default": "Overlapped"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiBarChart.ChartAxisLabeling": {
+      "title": "ChartAxisLabeling",
+      "type": "string",
+      "enum": [
+        "Number",
+        "Scientific",
+        "Auto"
+      ],
+      "default": "Number"
     },
     "TcHmiBarChart": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiBarChart"
@@ -6433,6 +6569,101 @@
     "TcHmiEventLine": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiEventLine"
     },
+    "TcHmi.Controls.Beckhoff.TcHmiEventLine.MessageFormat": {
+      "title": "MessageFormat",
+      "type": "array",
+      "engineeringColumns": [
+        "title"
+      ],
+      "items": {
+        "anyOf": [
+          {
+            "title": "Event Property",
+            "type": "object",
+            "propertiesMeta": [
+              {
+                "name": "name",
+                "displayName": "Name",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "A Part of the displayed message.",
+                "defaultValue": null,
+                "defaultValueInternal": null
+              }
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "enum": [
+                  "type",
+                  "severity",
+                  "alarmState",
+                  "confirmationState",
+                  "domain",
+                  "sourceDomain",
+                  "name",
+                  "text",
+                  "timeReceived",
+                  "timeRaised",
+                  "timeConfirmed",
+                  "timeCleared"
+                ]
+              }
+            },
+            "required": [
+              "name"
+            ]
+          },
+          {
+            "title": "Event Parameter",
+            "type": "object",
+            "propertiesMeta": [
+              {
+                "name": "name",
+                "displayName": "Name",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "The Path to a property of the received event. Subproperties can be accessed with the '::' seperator.",
+                "defaultValue": "params::",
+                "defaultValueInternal": null
+              }
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "pattern": "^params::"
+              }
+            },
+            "required": [
+              "name"
+            ]
+          },
+          {
+            "title": "Text",
+            "type": "object",
+            "propertiesMeta": [
+              {
+                "name": "text",
+                "displayName": "Text",
+                "category": "General",
+                "displayPriority": 10,
+                "description": "A custom text displayed in the event message.",
+                "defaultValue": null,
+                "defaultValueInternal": null
+              }
+            ],
+            "properties": {
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          }
+        ]
+      }
+    },
     "TcHmi.Controls.Beckhoff.TcHmiFileExplorer": {
       "type": "object",
       "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
@@ -6516,7 +6747,8 @@
       "type": "string",
       "enum": [
         "Overlapped",
-        "Clustered"
+        "Clustered",
+        "Stacked"
       ],
       "default": "Overlapped"
     },
@@ -6536,7 +6768,7 @@
             "displayPriority": 10,
             "description": "Color for this bars",
             "defaultValue": {
-              "color": "#4794da"
+              "color": "#2775be"
             },
             "defaultValueInternal": null
           },
@@ -6548,6 +6780,15 @@
             "description": "The name that is displayed in the legend.",
             "defaultValue": null,
             "defaultValueInternal": null
+          },
+          {
+            "name": "scaleFactor",
+            "category": "General",
+            "displayName": "Scale factor",
+            "displayPriority": 10,
+            "description": "Scales all values with this scale factor.",
+            "defaultValue": null,
+            "defaultValueInternal": 1
           }
         ],
         "properties": {
@@ -6556,10 +6797,23 @@
           },
           "legendName": {
             "type": "string"
+          },
+          "scaleFactor": {
+            "type": "number"
           }
         },
         "required": []
       }
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart.ChartAxisLabeling": {
+      "title": "ChartAxisLabeling",
+      "type": "string",
+      "enum": [
+        "Number",
+        "Scientific",
+        "Auto"
+      ],
+      "default": "Number"
     },
     "TcHmiHorizontalBarChart": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiHorizontalBarChart"
@@ -6827,7 +7081,7 @@
             "category": "Colors",
             "displayPriority": 10,
             "description": "Color for this line",
-            "defaultValue": "rgba(71, 148, 218, 1)",
+            "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionLineColor%/tr%",
             "defaultValueInternal": null
           },
           {
@@ -6836,7 +7090,7 @@
             "category": "Colors",
             "displayPriority": 10,
             "description": "Color for the fill of the dots",
-            "defaultValue": "rgba(71, 148, 218, 1)",
+            "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionPointDotFillColor%/tr%",
             "defaultValueInternal": null
           },
           {
@@ -6845,7 +7099,7 @@
             "category": "Colors",
             "displayPriority": 10,
             "description": "Color for the stroke of the dots",
-            "defaultValue": "rgba(71, 148, 218, 1)",
+            "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::LineGraphDescriptionPointDotStrokeColor%/tr%",
             "defaultValueInternal": null
           },
           {
@@ -6901,6 +7155,24 @@
             "description": "The name that is displayed in the legend.",
             "defaultValue": null,
             "defaultValueInternal": null
+          },
+          {
+            "name": "xScaleFactor",
+            "category": "General",
+            "displayName": "X scale factor",
+            "displayPriority": 10,
+            "description": "Scales all x values with this scale factor.",
+            "defaultValue": null,
+            "defaultValueInternal": 1
+          },
+          {
+            "name": "yScaleFactor",
+            "category": "General",
+            "displayName": "Y scale factor",
+            "displayPriority": 10,
+            "description": "Scales all y values with this scale factor.",
+            "defaultValue": null,
+            "defaultValueInternal": 1
           }
         ],
         "properties": {
@@ -6932,6 +7204,12 @@
           },
           "legendName": {
             "type": "string"
+          },
+          "xScaleFactor": {
+            "type": "number"
+          },
+          "yScaleFactor": {
+            "type": "number"
           }
         },
         "required": [
@@ -6954,7 +7232,7 @@
           "displayName": "Label font color",
           "displayPriority": 10,
           "description": "",
-          "defaultValue": null,
+          "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::YAxisLabelFontColor%/tr%",
           "defaultValueInternal": {
             "color": "#4794da"
           }
@@ -6965,7 +7243,7 @@
           "displayName": "Axis color",
           "displayPriority": 10,
           "description": "",
-          "defaultValue": null,
+          "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::YAxisAxisColor%/tr%",
           "defaultValueInternal": {
             "color": "#4794da"
           }
@@ -6976,7 +7254,7 @@
           "displayName": "Axis name font color",
           "displayPriority": 10,
           "description": "",
-          "defaultValue": null,
+          "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiLineChart::YAxisAxisNameFontColor%/tr%",
           "defaultValueInternal": {
             "color": "#4794da"
           }
@@ -6998,6 +7276,24 @@
           "description": "",
           "defaultValue": null,
           "defaultValueInternal": "Left"
+        },
+        {
+          "name": "logarithmicScale",
+          "category": "General",
+          "displayName": "Logarithmic scale",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "axisLabeling",
+          "category": "General",
+          "displayName": "Axis labeling",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": "Number"
         },
         {
           "name": "mainTickMinValue",
@@ -7129,6 +7425,17 @@
             "Right"
           ]
         },
+        "logarithmicScale": {
+          "type": "boolean"
+        },
+        "axisLabeling": {
+          "type": "string",
+          "enum": [
+            "Number",
+            "Scientific",
+            "Auto"
+          ]
+        },
         "mainTickMinValue": {
           "type": "number"
         },
@@ -7179,6 +7486,16 @@
       "items": {
         "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiLineChart.ChartYAxisDefinition"
       }
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiLineChart.ChartAxisLabeling": {
+      "title": "ChartAxisLabeling",
+      "type": "string",
+      "enum": [
+        "Number",
+        "Scientific",
+        "Auto"
+      ],
+      "default": "Number"
     },
     "TcHmiLineChart": {
       "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiLineChart"
@@ -7415,7 +7732,7 @@
             "category": "Colors",
             "displayPriority": 10,
             "description": "Color for this line",
-            "defaultValue": "rgba(71, 148, 218, 1)",
+            "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::LineGraphDescriptionLineColor%/tr%",
             "defaultValueInternal": null
           },
           {
@@ -7424,7 +7741,7 @@
             "category": "Colors",
             "displayPriority": 10,
             "description": "Color for the fill of the dots",
-            "defaultValue": "rgba(71, 148, 218, 1)",
+            "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::LineGraphDescriptionPointDotFillColor%/tr%",
             "defaultValueInternal": null
           },
           {
@@ -7433,7 +7750,7 @@
             "category": "Colors",
             "displayPriority": 10,
             "description": "Color for the stroke of the dots",
-            "defaultValue": "rgba(71, 148, 218, 1)",
+            "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::LineGraphDescriptionPointDotStrokeColor%/tr%",
             "defaultValueInternal": null
           },
           {
@@ -7507,6 +7824,15 @@
             "description": "The name that is displayed in the legend.",
             "defaultValue": null,
             "defaultValueInternal": null
+          },
+          {
+            "name": "scaleFactor",
+            "category": "General",
+            "displayName": "Scale factor",
+            "displayPriority": 10,
+            "description": "Scales all values with this scale factor.",
+            "defaultValue": null,
+            "defaultValueInternal": 1
           }
         ],
         "properties": {
@@ -7544,6 +7870,9 @@
           },
           "legendName": {
             "type": "string"
+          },
+          "scaleFactor": {
+            "type": "number"
           }
         },
         "required": [
@@ -7673,9 +8002,9 @@
           "displayName": "Label font color",
           "displayPriority": 10,
           "description": "",
-          "defaultValue": null,
+          "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisLabelFontColor%/tr%",
           "defaultValueInternal": {
-            "color": "#4794da"
+            "color": "#2775be"
           }
         },
         {
@@ -7684,9 +8013,9 @@
           "displayName": "Axis color",
           "displayPriority": 10,
           "description": "",
-          "defaultValue": null,
+          "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisAxisColor%/tr%",
           "defaultValueInternal": {
-            "color": "#4794da"
+            "color": "#2775be"
           }
         },
         {
@@ -7695,9 +8024,9 @@
           "displayName": "Axis name font color",
           "displayPriority": 10,
           "description": "",
-          "defaultValue": null,
+          "defaultValue": "%tr%Control::TcHmi.Controls.Beckhoff.TcHmiTrendLineChart::YAxisAxisNameFontColor%/tr%",
           "defaultValueInternal": {
-            "color": "#4794da"
+            "color": "#2775be"
           }
         },
         {
@@ -7717,6 +8046,24 @@
           "description": "",
           "defaultValue": null,
           "defaultValueInternal": "Left"
+        },
+        {
+          "name": "logarithmicScale",
+          "category": "General",
+          "displayName": "Logarithmic scale",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": false
+        },
+        {
+          "name": "axisLabeling",
+          "category": "General",
+          "displayName": "Axis labeling",
+          "displayPriority": 10,
+          "description": "",
+          "defaultValue": null,
+          "defaultValueInternal": "Number"
         },
         {
           "name": "mainTickMinValue",
@@ -7855,6 +8202,17 @@
           "enum": [
             "Left",
             "Right"
+          ]
+        },
+        "logarithmicScale": {
+          "type": "boolean"
+        },
+        "axisLabeling": {
+          "type": "string",
+          "enum": [
+            "Number",
+            "Scientific",
+            "Auto"
           ]
         },
         "mainTickMinValue": {
@@ -8269,6 +8627,23 @@
         "state",
         "stateIcon"
       ]
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiRecipeEdit": {
+      "$schema": "http://json-schema.org/draft-04/schema",
+      "type": "object",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkControlType": "TcHmiRecipeEdit",
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff"
+    },
+    "TcHmi.Controls.Beckhoff.TcHmiRecipeEdit.NameArray": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "TcHmiRecipeEdit": {
+      "$ref": "tchmi:framework#/definitions/TcHmi.Controls.Beckhoff.TcHmiRecipeEdit"
     },
     "TcHmi.Controls.Beckhoff.TcHmiAdsState": {
       "type": "object",
@@ -10079,6 +10454,9 @@
             },
             {
               "type": "number"
+            },
+            {
+              "type": "null"
             }
           ]
         },
@@ -10089,6 +10467,9 @@
             },
             {
               "type": "number"
+            },
+            {
+              "type": "null"
             }
           ]
         },
@@ -10099,6 +10480,9 @@
             },
             {
               "type": "number"
+            },
+            {
+              "type": "null"
             }
           ]
         },
@@ -10109,6 +10493,9 @@
             },
             {
               "type": "number"
+            },
+            {
+              "type": "null"
             }
           ]
         },
@@ -10119,6 +10506,9 @@
             },
             {
               "type": "number"
+            },
+            {
+              "type": "null"
             }
           ]
         },
@@ -10129,6 +10519,9 @@
             },
             {
               "type": "number"
+            },
+            {
+              "type": "null"
             }
           ]
         }
@@ -10141,7 +10534,7 @@
           "displayPriority": 10,
           "description": "",
           "defaultValue": null,
-          "defaultValueInternal": null
+          "defaultValueInternal": ""
         },
         {
           "name": "position",
@@ -10150,7 +10543,7 @@
           "displayPriority": 10,
           "description": "",
           "defaultValue": null,
-          "defaultValueInternal": null
+          "defaultValueInternal": "Center"
         },
         {
           "name": "defaultHeight",

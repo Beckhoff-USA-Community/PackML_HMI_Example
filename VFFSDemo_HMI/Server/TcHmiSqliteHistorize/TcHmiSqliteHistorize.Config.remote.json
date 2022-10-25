@@ -6,6 +6,18 @@
             "maxEntries": 10000,
             "recordingEnabled": true,
             "rowLimit": 10000
+        },
+        "PLC1.MAIN.VFFSDemo.ProductionRate": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 10000
+        },
+        "PLC1.MAIN.VFFSDemo.Sealer.SealBar._ActualTemperature": {
+            "interval": "PT1S",
+            "maxEntries": 10000,
+            "recordingEnabled": true,
+            "rowLimit": 100000
         }
     },
     "maxBackups": 1

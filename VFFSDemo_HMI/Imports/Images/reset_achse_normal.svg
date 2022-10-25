@@ -23,8 +23,8 @@ QmCC" transform="matrix(1 0 0 1 -5 -5.333)">
 		</image>
 		<g>
 			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="3.7769" y1="-3.502" x2="76.2231" y2="82.8361">
-				<stop  offset="0.5" style="stop-color:#F3AA00"/>
-				<stop  offset="0.9998" style="stop-color:#F39200"/>
+				<stop  offset="0.5" style="stop-color:#0000FA"/>
+				<stop  offset="0.9998" style="stop-color:#0000F9"/>
 			</linearGradient>
 			<rect y="-0.333" fill="url(#SVGID_1_)" width="80" height="80"/>
 		</g>
