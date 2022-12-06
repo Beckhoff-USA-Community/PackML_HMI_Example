@@ -12,6 +12,7 @@
     "L_Sensor": "Sensor",
     "L_Unwind": "Unwind",
     "L_Home": "Home",
-    "L_Blank": " "
+    "L_Blank": " ",
+    "L_SealBar": "Seal Bar"
   }
 }

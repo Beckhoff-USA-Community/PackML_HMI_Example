@@ -1,188 +1,129 @@
-﻿<div id="PullWheels" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1280" data-tchmi-creator-viewport-height="720" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+﻿<div id="PullWheels" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1280" data-tchmi-creator-viewport-height="720" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="1">
 
-  <div id="PullWheels_MainContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-is-enabled="true" data-tchmi-creator-locked="False" data-tchmi-left="16" data-tchmi-top="0" data-tchmi-right="16" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-height="90" data-tchmi-height-unit="%">
-    <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
-      [
-      "background-container"
-      ]
-    </script>
-  <div id="PullWheels_MainContainer_Overview" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-zindex="11" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-top="%ctrl%PullWheels_SubModule_Monitor::RenderedHeight%/ctrl%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+  <div id="PullWheels_MainContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-left="16" data-tchmi-top="0" data-tchmi-right="16" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-zindex="1">
+    
+  <div id="PullWheels_MainContainer_Overview" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-width-mode="Value" data-tchmi-height-mode="Value" data-tchmi-zindex="0" data-tchmi-width-unit="px" data-tchmi-is-enabled="true" data-tchmi-creator-locked="False" data-tchmi-left="0" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-top="%ctrl%PullWheels_SubModule_Monitor::RenderedHeight%/ctrl%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "overview-dot-container"
 ]
 </script>
-<div id="PullWheels_MainContainer_OverviewImage" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-is-enabled="true" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-max-width="80" data-tchmi-max-width-unit="%" data-tchmi-max-height="80" data-tchmi-max-height-unit="%" data-tchmi-width="30" data-tchmi-width-unit="%" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="0" data-tchmi-creator-locked="True" data-tchmi-top-unit="%" data-tchmi-top="4" data-tchmi-src="Images/MachineOverviewImages/Pullbelts.png" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Top" data-tchmi-height="57" data-tchmi-height-unit="%">
+<div id="PullWheels_MainContainer_OverviewImage" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-is-enabled="true" data-tchmi-height-mode="Value" data-tchmi-width-mode="Value" data-tchmi-max-width="80" data-tchmi-max-width-unit="%" data-tchmi-max-height="80" data-tchmi-max-height-unit="%" data-tchmi-width="45" data-tchmi-width-unit="%" data-tchmi-left="27.5" data-tchmi-left-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-zindex="1" data-tchmi-creator-locked="False" data-tchmi-top-unit="%" data-tchmi-top="4" data-tchmi-src="Images/MachineOverviewImages/Pullbelts.png" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Top" data-tchmi-height="80" data-tchmi-height-unit="%">
 </div>
-<div id="PullWheels_ComponentGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-bottom="2.5" data-tchmi-bottom-unit="%" data-tchmi-cell-wrap="true">
+<div id="Left_AxisBase_Monitor_Nav" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/Components/AxisBase_Monitor_Navigation.usercontrol" data-tchmi-top="25" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-axis="%s%PLC1.MAIN.VFFSDemo.PullWheels.LeftPullWheel.AxisBase_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.PullWheels.LeftPullWheel.ComponentBase_HMI%/s%" data-tchmi-height-mode="Content" data-tchmi-detailpage="Pages/EquipmentModules/PullWheels/Components/PullWheel_Left.content" data-tchmi-zindex="6">
+</div>
+<div id="AxisBase_Monitor_RIght" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left="69" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/Components/AxisBase_Monitor_Navigation.usercontrol" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-detailpage="Pages/EquipmentModules/PullWheels/Components/PullWheel_Right.content" data-tchmi-axis="%s%PLC1.MAIN.VFFSDemo.PullWheels.RightPullWheel.AxisBase_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.PullWheels.RightPullWheel.ComponentBase_HMI%/s%" data-tchmi-zindex="9">
+</div>
+<div id="Cylinder_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left="15" data-tchmi-left-unit="%" data-tchmi-target-user-control="UserControls/Components/Cylinder_Monitor_Navigation.usercontrol" data-tchmi-top="60" data-tchmi-top-unit="%" data-tchmi-width="20" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-cylinder="%s%PLC1.MAIN.VFFSDemo.PullWheels.PullWheelCylinder.Cylinder_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.PullWheels.PullWheelCylinder.ComponentBase_HMI%/s%" data-tchmi-detailpage="Pages/EquipmentModules/PullWheels/Components/Cylinder.content" data-tchmi-zindex="8">
+</div>
+<div id="TcHmiLine_Left" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="1" data-tchmi-height-unit="%" data-tchmi-left="36" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width="6" data-tchmi-width-unit="%" data-tchmi-x2="100" data-tchmi-y2="1" data-tchmi-scale-mode="ScaleToFitWidth" data-tchmi-zindex="2">
+</div>
+<div id="TcHmiLine_Right" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiLine" data-tchmi-height="1" data-tchmi-height-unit="%" data-tchmi-left="60" data-tchmi-left-unit="%" data-tchmi-top="34" data-tchmi-top-unit="%" data-tchmi-width="8" data-tchmi-width-unit="%" data-tchmi-x2="100" data-tchmi-y2="1" data-tchmi-scale-mode="ScaleToFitWidth" data-tchmi-zindex="2">
+</div>
+</div>
+<div id="PullWheels_SubModule_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseSubModule_Buttons2_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.PullWheels.PackMLBaseModule_HMI%/s%" data-tchmi-zindex="1">
+</div>
+<div id="TcHmiContainer_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="33" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width="60" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="5">
+<div id="TcHmiToggleButton_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Info Message" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.PullWheels.InfoInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="False" data-tchmi-height="25" data-tchmi-min-height="10" data-tchmi-zindex="1">
 
-<script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "packmlmodule-monitor-button"
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [
   {
-    "width": 1.0,
-    "widthUnit": "factor",
-    "widthMode": "Value",
-    "maxWidthUnit": "px",
-    "minWidthUnit": "px",
-    "overflow": false
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
   },
   {
-    "width": 1.0,
-    "widthUnit": "factor",
-    "widthMode": "Value",
-    "maxWidthUnit": "px",
-    "minWidthUnit": "px",
-    "overflow": false
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Deny"
   },
   {
-    "width": 1.0,
-    "widthUnit": "factor",
-    "widthMode": "Value",
-    "maxWidthUnit": "px",
-    "minWidthUnit": "px",
-    "overflow": false
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Deny"
   }
 ]
 </script>
-<div id="PullWheel_Left_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Components/AxisBase_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-column-index="0" data-tchmi-bottom="0" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-axis="%s%PLC1.MAIN.VFFSDemo.PullWheels.LeftPullWheel.AxisBase_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.PullWheels.LeftPullWheel.ComponentBase_HMI%/s%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 </div>
-<div id="PullWheel_Right_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Components/AxisBase_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-bottom="0" data-tchmi-height-mode="Content" data-tchmi-axis="%s%PLC1.MAIN.VFFSDemo.PullWheels.RightPullWheel.AxisBase_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.PullWheels.RightPullWheel.ComponentBase_HMI%/s%">
-</div>
-<div id="PullWheelCylinder_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Components/Cylinder_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-bottom="0" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-cylinder="%s%PLC1.MAIN.VFFSDemo.PullWheels.PullWheelCylinder.Cylinder_HMI%/s%" data-tchmi-component="%s%PLC1.MAIN.VFFSDemo.PullWheels.PullWheelCylinder.ComponentBase_HMI%/s%">
-</div>
-<div id="LeftButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="3" data-tchmi-opacity="0">
+<div id="TcHmiToggleButton_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Warn Message" data-tchmi-top="33" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.PullWheels.WarnInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="True" data-tchmi-min-height="10" data-tchmi-zindex="1">
 
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "None"
-}
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "packmlmodule-monitor-button"
+]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [
   {
-    "event": "LeftButton.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Left.content"
-        },
-        "asyncWait": true
-      }
-    ]
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Deny"
   }
 ]
 </script>
 </div>
-<div id="RightButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="3" data-tchmi-opacity="0" data-tchmi-grid-column-index="1">
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "None"
-}
+<div id="TcHmiToggleButton_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Error Message" data-tchmi-top="66" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.PullWheels.ErrorInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="True" data-tchmi-min-height="10" data-tchmi-zindex="1">
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "packmlmodule-monitor-button"
+]
 </script>
 
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
 [
   {
-    "event": "RightButton.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/EquipmentModules/PullWheels/Components/PullWheel_Right.content"
-        },
-        "asyncWait": true
-      }
-    ]
-  }
-]
-</script>
-</div>
-<div id="CylinderButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="30" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-text="Button" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="3" data-tchmi-opacity="0" data-tchmi-grid-column-index="2">
-<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
-{
-  "color": "None"
-}
-</script>
-
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
-[
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
   {
-    "event": "CylinderButton.onPressed",
-    "actions": [
-      {
-        "objectType": "WriteToSymbol",
-        "active": true,
-        "symbolExpression": "%ctrl%Region_Center::TargetContent%/ctrl%",
-        "value": {
-          "objectType": "StaticValue",
-          "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "Pages/EquipmentModules/PullWheels/Components/Cylinder.content"
-        },
-        "asyncWait": true
-      }
-    ]
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Deny"
   }
 ]
 </script>
 </div>
-</div>
-</div>
-<div id="TcHmiContainer_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="33" data-tchmi-height-unit="%" data-tchmi-left="2" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width="60" data-tchmi-width-unit="px" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-zindex="20">
-<div id="TcHmiToggleButton_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Info Message" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.PullWheels.InfoInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="False" data-tchmi-height="25" data-tchmi-min-height="10">
-</div>
-<div id="TcHmiToggleButton_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Warn Message" data-tchmi-top="33" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.PullWheels.WarnInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="True" data-tchmi-min-height="10">
-</div>
-<div id="TcHmiToggleButton_5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="25" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="Error Message" data-tchmi-top="66" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-state-symbol="%s%PLC1.MAIN.VFFSDemo.PullWheels.ErrorInput%/s%" data-tchmi-toggle-state="Normal" data-tchmi-creator-locked="True" data-tchmi-min-height="10">
-</div>
-</div>
-<div id="PullWheels_SubModule_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="px" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_BaseSubModule_Buttons2_Monitor.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-module="%s%PLC1.MAIN.VFFSDemo.PullWheels.PackMLBaseModule_HMI%/s%">
 </div>
 </div>
 </div>

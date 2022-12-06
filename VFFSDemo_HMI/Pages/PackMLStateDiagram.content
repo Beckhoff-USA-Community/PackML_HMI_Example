@@ -1,5 +1,22 @@
-﻿<div id="PackMLStateDiagram_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-is-enabled="true" data-tchmi-width="60" data-tchmi-height="60" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="640" data-tchmi-creator-viewport-height="360" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-left="20" data-tchmi-top="20" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
+﻿<div id="PackMLStateDiagram_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-is-enabled="true" data-tchmi-width="60" data-tchmi-height="80" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-creator-viewport-width="1280" data-tchmi-creator-viewport-height="720" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-left="20" data-tchmi-top="0" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
 
-<div id="PML_Flowchart_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/PackML/PackML_StateDiagram.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-module="%s%PLC1.MAIN.ControlSource_HMI.MainPMLControl_Standard%/s%" data-tchmi-packmlmodule="%s%PLC1.MAIN.ControlSource_HMI.MainPMLControl_Standard%/s%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div id="PML_Flowchart_Machine" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/PackML/PackML_StateDiagram.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-module="%s%PLC1.MAIN.ControlSource_HMI.MainPMLControl_Standard%/s%" data-tchmi-packmlmodule="%s%PLC1.MAIN.ControlSource_HMI.MainPMLControl_Standard%/s%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-enablecontrol="true">
+</div>
+<div id="TcHmiTextbox_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="40" data-tchmi-left-unit="%" data-tchmi-text="VFFS Demo" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center" data-tchmi-height-mode="Value">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "packmlmodule-monitor-title"
+]
+</script>
 </div>
 </div>

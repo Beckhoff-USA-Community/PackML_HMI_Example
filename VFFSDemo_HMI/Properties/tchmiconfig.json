@@ -10,8 +10,56 @@
     "websocketSystemTimeout": 60000,
     "websocketSubscriptionMode": "Change"
   },
-  "activeTheme": "SPT-Base",
+  "activeTheme": "Base",
   "themes": {
+    "Base-Dark": {
+      "resources": [
+        {
+          "name": "Themes/Base-Dark/Base-Dark.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base-Dark/Base-DarkStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": []
+    },
+    "Base": {
+      "resources": [
+        {
+          "name": "Themes/Base/Base.theme",
+          "description": "",
+          "type": "ThemedValues"
+        },
+        {
+          "name": "Themes/Base/BaseStyle.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base/TcHmi.Controls.BaseTemplate.TcHmiNavigation/Style.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base/TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar/Style.css",
+          "description": "",
+          "type": "Stylesheet"
+        },
+        {
+          "name": "Themes/Base/CustomControlClasses.css",
+          "description": "",
+          "type": "Stylesheet"
+        }
+      ],
+      "replacesThemeForControls": [
+        "TcHmi.Controls.BaseTemplate.TcHmiNavigation",
+        "TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar"
+      ]
+    },
     "SPT-Base": {
       "resources": [
         {
@@ -71,29 +119,70 @@
       "name": "SetEventLoggerFilters.js",
       "description": "",
       "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/ConvertDatagridToRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/ConvertRecipeToDatagrid.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/DeleteRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/DownloadRecipe.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/ListRecipesAsReferenceArray.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/UpdateDatagridFromTarget.js",
+      "description": "",
+      "type": "JavaScript"
+    },
+    {
+      "name": "RecipeFunctions/UploadRecipe.js",
+      "description": "",
+      "type": "JavaScript"
     }
   ],
   "userControls": [
     {
+      "url": "UserControls/Components/AxisBase_Monitor_Navigation.usercontrol"
+    },
+    {
       "url": "UserControls/Components/AxisBase_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/Components/ComponentBase_Monitor_Navigation.usercontrol"
     },
     {
       "url": "UserControls/Components/ComponentBase_Monitor.usercontrol"
     },
     {
+      "url": "UserControls/Components/Cylinder_Monitor_Navigation.usercontrol"
+    },
+    {
       "url": "UserControls/Components/Cylinder_Monitor.usercontrol"
+    },
+    {
+      "url": "UserControls/Components/DigitalSensor_Monitor_Navigation.usercontrol"
     },
     {
       "url": "UserControls/Components/DigitalSensor_Monitor.usercontrol"
     },
     {
       "url": "UserControls/PackML/PackML_BaseSubModule_Buttons2_Monitor.usercontrol"
-    },
-    {
-      "url": "UserControls/PackML/PackML_BaseModule_Buttons2_Monitor.usercontrol"
-    },
-    {
-      "url": "UserControls/PackML/PackML_BaseModule_Buttons_Monitor.usercontrol"
     },
     {
       "url": "UserControls/PackML/PackML_BaseSubModule_Monitor.usercontrol"
@@ -109,9 +198,6 @@
     },
     {
       "url": "UserControls/PackML/PackML_ModeDisplay.usercontrol"
-    },
-    {
-      "url": "UserControls/PackML/PackML_StateCommand.usercontrol"
     },
     {
       "url": "UserControls/PackML/PackML_StateDiagram.usercontrol"
@@ -147,27 +233,6 @@
       "preloadBindings": false
     },
     {
-      "url": "Pages/MachineOverview.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/PackMLStateDiagram.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
-      "url": "Pages/ProductionStatus.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
-    },
-    {
       "url": "Pages/EquipmentModules/PullWheels/Components/Cylinder.content",
       "preload": false,
       "keepAlive": false,
@@ -196,6 +261,13 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/EquipmentModules/PullWheels/PullWheels_PackML.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/EquipmentModules/Sealer/Components/SealBar.content",
       "preload": false,
       "keepAlive": false,
@@ -204,6 +276,13 @@
     },
     {
       "url": "Pages/EquipmentModules/Sealer/Components/SealerAxis.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/EquipmentModules/Sealer/Sealer_PackML.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -238,6 +317,13 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/EquipmentModules/Unwind/Unwind_PackML.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/Events.content",
       "preload": false,
       "keepAlive": false,
@@ -245,7 +331,42 @@
       "preloadBindings": false
     },
     {
+      "url": "Pages/MachineOverview.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/PackMLStateDiagram.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Recipe/PackTags.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/Recipe/RecipeManagement.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
       "url": "Pages/Settings.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "Pages/ProductionStatus.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,
@@ -263,6 +384,27 @@
   "userFunctions": [
     {
       "url": "NavigateToDetailPage.js"
+    },
+    {
+      "url": "RecipeFunctions/ConvertDatagridToRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/ConvertRecipeToDatagrid.js"
+    },
+    {
+      "url": "RecipeFunctions/DeleteRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/DownloadRecipe.js"
+    },
+    {
+      "url": "RecipeFunctions/ListRecipesAsReferenceArray.js"
+    },
+    {
+      "url": "RecipeFunctions/UpdateDatagridFromTarget.js"
+    },
+    {
+      "url": "RecipeFunctions/UploadRecipe.js"
     },
     {
       "url": "SetEventBarFilter.js"
@@ -349,9 +491,237 @@
         "type": "tchmi:framework#/definitions/TcHmi.Functions.BaseTemplate.AffectedControlList",
         "persist": true,
         "readonly": true
+      },
+      "PackMLCurrentRecipe": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
+      },
+      "CurrentRecipe": {
+        "type": "tchmi:general#/definitions/String",
+        "persist": true,
+        "readonly": false
       }
     },
-    "themedResources": {}
+    "themedResources": {
+      "State_Abort_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(255, 0, 0, 0.7843137)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "State_Stopped_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(255, 150, 0, 0.7843137)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "State_Transition_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(255, 255, 0, 0.7843137)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "State_Idle_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(150, 150, 150, 0.7843137)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "State_Execute_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(0, 255, 0, 0.7843137)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "State_Starting_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(150, 255, 0, 0.7843137)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "Mode_Production_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(0, 255, 0, 1)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "Mode_Maintenance_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(128, 128, 0, 1)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      },
+      "Mode_Manual_Shadow": {
+        "type": "tchmi:framework#/definitions/BoxShadowList",
+        "description": "",
+        "values": {
+          "Base": null,
+          "Base-Dark": null,
+          "SPT-Base": [
+            {
+              "color": {
+                "color": "rgba(128, 0, 128, 1)"
+              },
+              "offsetX": 0.0,
+              "offsetXUnit": "px",
+              "offsetY": 0.0,
+              "offsetYUnit": "px",
+              "inset": true,
+              "blur": 7.0,
+              "blurUnit": "px",
+              "spread": 3.0,
+              "spreadUnit": "px"
+            }
+          ]
+        }
+      }
+    }
   },
   "trigger": [],
   "actionTemplates": [],

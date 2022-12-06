@@ -1,4 +1,4 @@
-﻿<div id="AxisBase_Monitor_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible">
+﻿<div id="AxisBase_Monitor_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="True">
 
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -147,7 +147,7 @@
   "animate-all-properties"
 ]
 </script>
-<div id="Cylinder_Monitor_ResetButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Reset" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Component::Command::Reset%/pp%">
+<div id="Cylinder_Monitor_ResetButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Reset" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Component::Command::Reset%/pp%" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
@@ -155,32 +155,82 @@
 ]
 </script>
 </div>
-<div id="Cylinder_Monitor_PopoutGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-grid-row-index="1" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5">
-<div id="Cylinder_Monitor_BlankButton1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="2" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-grid-row-index="1">
+<div id="Cylinder_Monitor_PopoutGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-grid-row-index="1" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
+<div id="Cylinder_Monitor_BlankButton1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-grid-column-index="2" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-grid-row-index="1" data-tchmi-right="3" data-tchmi-bottom="3" data-tchmi-is-enabled="false">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
 </div>
-<div id="Cylinder_Monitor_BlankButton2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="3" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-grid-row-index="1">
+<div id="Cylinder_Monitor_BlankButton2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="false" data-tchmi-grid-column-index="3" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-grid-row-index="1" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
 </div>
-<div id="Cylinder_Monitor_RetractButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-grid-column-index="1" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Cylinder::Command::Retract%/pp%" data-tchmi-grid-row-index="1" data-tchmi-text="Retract" data-tchmi-is-enabled="%pp%Component::Status::HMIControlAvailable%/pp%">
+<div id="Cylinder_Monitor_RetractButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-grid-column-index="1" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Cylinder::Command::Retract%/pp%" data-tchmi-grid-row-index="1" data-tchmi-text="Retract" data-tchmi-is-enabled="%pp%Component::Status::HMIControlAvailable%/pp%" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  }
+]
+</script>
 </div>
-<div id="Cylinder_Monitor_ExtendButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-grid-column-index="0" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Cylinder::Command::Extend%/pp%" data-tchmi-grid-row-index="1" data-tchmi-text="Extend" data-tchmi-is-enabled="%pp%Component::Status::HMIControlAvailable%/pp%">
+<div id="Cylinder_Monitor_ExtendButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-grid-column-index="0" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Cylinder::Command::Extend%/pp%" data-tchmi-grid-row-index="1" data-tchmi-text="Extend" data-tchmi-is-enabled="%pp%Component::Status::HMIControlAvailable%/pp%" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
 ]
 </script>
 </div>
@@ -230,7 +280,7 @@
 ]
 </script>
 </div>
-<div id="Cylinder_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-zindex="10" data-tchmi-is-enabled="true" data-tchmi-height="200" data-tchmi-creator-visibility="Visible">
+<div id="Cylinder_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-zindex="10" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Collapsed" data-tchmi-width="100" data-tchmi-creator-locked="False">
 
 
 <div id="Cylinder_Monitor_StaticGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content" data-tchmi-top="%ctrl%Cylinder_Monitor_Title::RenderedHeight%/ctrl%">
@@ -299,7 +349,7 @@
 ]
 </script>
 </div>
-<div id="Cylinder_Monitor_Retracted" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="4" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Retrracted" data-tchmi-indicator="%pp%Cylinder::Status::Retracted%/pp%" data-tchmi-creator-locked="True">
+<div id="Cylinder_Monitor_Retracted" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="4" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Retracted" data-tchmi-indicator="%pp%Cylinder::Status::Retracted%/pp%" data-tchmi-creator-locked="True">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-cell"
@@ -360,7 +410,7 @@
 </script>
 </div>
 </div>
-<div id="Cylinder_Monitor_StaticGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-row-index="1" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-left="-1" data-tchmi-top="-1">
+<div id="Cylinder_Monitor_StaticGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-row-index="1" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true">
 <div id="Cylinder_Monitor_RetractTimeFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Retract Time:" data-tchmi-unit="ms" data-tchmi-grid-column-index="1" data-tchmi-data="%pp%Cylinder::Config::RetractTime%/pp%" data-tchmi-creator-locked="True" data-tchmi-decimalplaces="0">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [

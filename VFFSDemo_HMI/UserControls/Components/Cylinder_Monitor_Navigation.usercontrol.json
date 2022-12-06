@@ -1,0 +1,55 @@
+﻿{
+  "parameters": [
+    {
+      "name": "data-tchmi-cylinder",
+      "displayName": "Cylinder",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.ST_Cylinder_HMI",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Cylinder",
+      "propertySetterName": "setCylinder",
+      "propertyGetterName": "getCylinder",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-component",
+      "displayName": "Component",
+      "visible": true,
+      "type": "tchmi:server#/definitions/PLC1.SPT_ComponentBase.ST_ComponentBase_HMI",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "Component",
+      "propertySetterName": "setComponent",
+      "propertyGetterName": "getComponent",
+      "refTo": ""
+    },
+    {
+      "name": "data-tchmi-detailpage",
+      "displayName": "DetailPage",
+      "visible": true,
+      "type": "tchmi:framework#/definitions/ContentPath",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "DetailPage",
+      "propertySetterName": "setDetailPage",
+      "propertyGetterName": "getDetailPage",
+      "refTo": ""
+    }
+  ],
+  "virtualRights": [],
+  "$schema": "./../../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.752.0/runtimes/native1.12-tchmi/Schema/UserControlConfig.Schema.json",
+  "description": ""
+}

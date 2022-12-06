@@ -1,0 +1,22 @@
+﻿<div id="Sealer_PackML" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="20" data-tchmi-width="60" data-tchmi-height="80" data-tchmi-width-unit="%" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-creator-viewport-width="1280" data-tchmi-creator-viewport-height="720">
+
+<div id="PML_Flowchart_Sealer" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/PackML/PackML_StateDiagram.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-module="%s%PLC1.MAIN.ControlSource_HMI.MainPMLControl_Standard%/s%" data-tchmi-packmlmodule="%s%PLC1.MAIN.VFFSDemo.Sealer.fbControlSourceHMI.MainPMLControl_Standard%/s%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-top="20" data-tchmi-enablecontrol="%s%PLC1.MAIN.VFFSDemo.Sealer.PackMLBaseModule_HMI::Status::HMIControlAvailable%/s%">
+</div>
+<div id="TcHmiTextbox_2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextbox" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="40" data-tchmi-left-unit="%" data-tchmi-text="%l%L_Sealer%/l%" data-tchmi-top="5" data-tchmi-top-unit="%" data-tchmi-width="150" data-tchmi-width-unit="px" data-tchmi-text-horizontal-alignment="Center">
+<script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
+{
+  "top": 3,
+  "right": 3,
+  "bottom": 3,
+  "left": 3
+}
+</script>
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "packmlmodule-monitor-title"
+]
+</script>
+</div>
+</div>

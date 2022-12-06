@@ -2,11 +2,7 @@
   "controlTypeValues": {},
   "controlClassValues": {
     "background-container": {
-      "attributes": {
-        "BackgroundColor": null,
-        "TextColor": null,
-        "BoxShadow": null
-      },
+      "attributes": {},
       "themedResources": {}
     },
     "component-monitor-button": {
@@ -273,6 +269,28 @@
     "overview-dot": {
       "attributes": {
         "FillColor": null
+      },
+      "themedResources": {}
+    },
+    "Pack": {
+      "attributes": {},
+      "themedResources": {}
+    },
+    "Packml-Mode-Maintenance-Shadow": {
+      "attributes": {
+        "BoxShadow": null
+      },
+      "themedResources": {}
+    },
+    "Packml-Mode-Manual-Shadow": {
+      "attributes": {
+        "BoxShadow": null
+      },
+      "themedResources": {}
+    },
+    "Packml-Mode-Production-Shadow": {
+      "attributes": {
+        "BoxShadow": null
       },
       "themedResources": {}
     },

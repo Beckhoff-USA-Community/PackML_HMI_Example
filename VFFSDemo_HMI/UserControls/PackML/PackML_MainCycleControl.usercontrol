@@ -41,26 +41,10 @@
     "maxWidthUnit": "px",
     "minWidthUnit": "px",
     "overflow": false
-  },
-  {
-    "width": 0.05,
-    "widthUnit": "factor",
-    "widthMode": "Value",
-    "maxWidthUnit": "px",
-    "minWidthUnit": "px",
-    "overflow": false
-  },
-  {
-    "width": 1.0,
-    "widthUnit": "factor",
-    "widthMode": "Value",
-    "maxWidthUnit": "px",
-    "minWidthUnit": "px",
-    "overflow": false
   }
 ]
 </script>
-<div data-tchmi-grid-row-index="0" id="CycleStop_Pushbutton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-zindex="2" data-tchmi-background-image="Imports/Images/stop_normal.svg" data-tchmi-background-image-width="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-grid-column-index="2" data-tchmi-state-symbol="%pp%PackMLModule::StopPressed%/pp%" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-min-height="30" data-tchmi-creator-locked="True">
+<div data-tchmi-grid-row-index="0" id="CycleStop_Pushbutton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-top-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-zindex="2" data-tchmi-background-image="Imports/Images/stop_normal.svg" data-tchmi-background-image-width="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-grid-column-index="2" data-tchmi-state-symbol="%pp%PackMLModule::StopPressed%/pp%" data-tchmi-is-enabled="true" data-tchmi-width-unit="%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-min-height="30" data-tchmi-creator-locked="True" data-tchmi-left="4" data-tchmi-top="4" data-tchmi-right="4" data-tchmi-bottom="4">
 <script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
 {
   "left": 0,
@@ -157,8 +141,16 @@
 </script>
 
 
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "packmlmodule-monitor-button"
+]
+</script>
 </div>
-<div data-tchmi-grid-row-index="0" id="CycleReset_Pushbutton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-top-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-zindex="3" data-tchmi-background-image="Imports/Images/reset_achse_normal.svg" data-tchmi-background-image-width="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-grid-column-index="4" data-tchmi-state-symbol="%pp%PackMLModule::ResetPressed%/pp%" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-min-height="30">
+<div data-tchmi-grid-row-index="0" id="CycleReset_Pushbutton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-top-unit="px" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-zindex="3" data-tchmi-background-image="Imports/Images/reset_achse_normal.svg" data-tchmi-background-image-width="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-grid-column-index="4" data-tchmi-state-symbol="%pp%PackMLModule::ResetPressed%/pp%" data-tchmi-is-enabled="true" data-tchmi-width-unit="%" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-min-height="30" data-tchmi-left="4" data-tchmi-top="4" data-tchmi-right="4" data-tchmi-bottom="4">
 <script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
 {
   "left": 0,
@@ -255,119 +247,16 @@
 </script>
 
 
-</div>
-<div data-tchmi-grid-row-index="0" id="CycleClear_Pushbutton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-top="0.0" data-tchmi-top-unit="%" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-zindex="4" data-tchmi-background-image="Imports/Images/reset_achse_normal.svg" data-tchmi-background-image-width="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-icon-width="75" data-tchmi-icon-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-grid-column-index="6" data-tchmi-state-symbol="%pp%PackMLModule::ClearPressed%/pp%" data-tchmi-is-enabled="true" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-icon-height="75" data-tchmi-icon-height-unit="%" data-tchmi-icon="Imports/Images/safety-active.svg" data-tchmi-min-height="30">
-<script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
-{
-  "left": 0,
-  "right": 0,
-  "top": 0,
-  "bottom": 5,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
 
-<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
-{
-  "color": "rgba(0, 0, 0, 1)"
-}
-</script>
 
-<script data-tchmi-target-attribute="data-tchmi-icon-padding" type="application/json">
-{
-  "left": 0,
-  "right": 0,
-  "top": 25,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "%",
-  "bottomUnit": "px"
-}
-</script>
 
-<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
-  {
-    "event": "%pp%PackMLModule::ClearPermissive%/pp%",
-    "actions": [
-      {
-        "objectType": "Condition",
-        "active": true,
-        "parts": [
-          {
-            "if": [
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%pp%PackMLModule::ClearPermissive%/pp%"
-                },
-                "compare2": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:general#/definitions/BOOL",
-                  "value": false
-                },
-                "compareOperator": "==",
-                "logic": null
-              }
-            ],
-            "then": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%CycleClear_Pushbutton::BackgroundImage%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Path",
-                  "value": "Imports/Images/reset_achse_inactive.svg"
-                },
-                "asyncWait": true
-              }
-            ]
-          },
-          {
-            "else": [
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%CycleClear_Pushbutton::BackgroundImage%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Path",
-                  "value": "Imports/Images/reset_achse_normal.svg"
-                },
-                "asyncWait": true
-              }
-            ]
-          }
-        ],
-        "asyncWait": true
-      }
-    ]
-  }
+  "packmlmodule-monitor-button"
 ]
 </script>
-
-
-
-<script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
-{
-  "left": 0,
-  "right": 0,
-  "top": 0,
-  "bottom": 0,
-  "leftUnit": "px",
-  "rightUnit": "px",
-  "topUnit": "px",
-  "bottomUnit": "px"
-}
-</script>
 </div>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="CycleStart_Pushbutton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-zindex="1" data-tchmi-background-image="Imports/Images/start_normal.svg" data-tchmi-background-image-width="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-state-symbol="%pp%PackMLModule::StartPressed%/pp%" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-min-height="30">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="CycleStart_Pushbutton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="" data-tchmi-word-wrap="True" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-zindex="1" data-tchmi-background-image="Imports/Images/start_normal.svg" data-tchmi-background-image-width="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-height-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="px" data-tchmi-bottom-unit="px" data-tchmi-state-symbol="%pp%PackMLModule::StartPressed%/pp%" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-min-height="30" data-tchmi-left="4" data-tchmi-top="4" data-tchmi-right="4" data-tchmi-bottom="4">
 <script data-tchmi-target-attribute="data-tchmi-text-padding" type="application/json">
 {
   "left": 0,
@@ -464,6 +353,14 @@
       }
     ]
   }
+]
+</script>
+
+
+
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "packmlmodule-monitor-button"
 ]
 </script>
 </div>

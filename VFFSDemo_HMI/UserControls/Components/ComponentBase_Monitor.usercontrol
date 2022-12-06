@@ -1,5 +1,5 @@
 ﻿
-<div id="ComponentBase_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Visible">
+<div id="ComponentBase_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="True">
 
 
     <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -8,7 +8,7 @@
 ]
 </script>
     <div id="ComponentBase_Monitor_PopoutContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-top="0" data-tchmi-height-mode="Content" data-tchmi-height="%f%%ctrl%ComponentBase_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%ComponentBase_Monitor_ExpandButton::RenderedHeight%/ctrl%%/f%" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Visible">
-        <div id="ComponentBase_Monitor_ExpandButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-icon="Imports/Images/arrow-bar-down-white.svg" data-tchmi-icon-height-unit="%" data-tchmi-icon-height="80" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-ignore-escape-sequences="false" data-tchmi-creator-visibility="Collapsed">
+        <div id="ComponentBase_Monitor_ExpandButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-icon="Imports/Images/arrow-bar-down-white.svg" data-tchmi-icon-height-unit="%" data-tchmi-icon-height="80" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-ignore-escape-sequences="false" data-tchmi-creator-visibility="Visible">
             
 
             <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -138,7 +138,7 @@
   }
 ]
 </script>
-<div id="ComponentBase_Monitor_ResetButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height="90" data-tchmi-height-unit="%" data-tchmi-text="Reset" data-tchmi-width="90" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::Reset%/pp%" data-tchmi-left-unit="%" data-tchmi-left="5" data-tchmi-top-unit="%" data-tchmi-top="5">
+<div id="ComponentBase_Monitor_ResetButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="0" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-text="Reset" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::Reset%/pp%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
@@ -146,21 +146,71 @@
 </script>
 </div>
 <div id="ComponentBase_Monitor_PopoutGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-grid-row-index="1" data-tchmi-height-mode="Value" data-tchmi-height="50">
-<div id="ComponentBase_Monitor_StandardModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="90" data-tchmi-height-unit="%" data-tchmi-text="Standard Mode" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::StandardOperation%/pp%" data-tchmi-grid-column-index="1" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-left="0" data-tchmi-top="5" data-tchmi-ignore-escape-sequences="false">
+<div id="ComponentBase_Monitor_StandardModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Standard Mode" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::StandardOperation%/pp%" data-tchmi-grid-column-index="1" data-tchmi-left-unit="%" data-tchmi-top-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-ignore-escape-sequences="false" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
-<div id="ComponentBase_Monitor_SimulationModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="90" data-tchmi-height-unit="%" data-tchmi-text="Simulation Mode" data-tchmi-width="97.5" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::SimulatedOperation%/pp%" data-tchmi-top-unit="%" data-tchmi-top="5" data-tchmi-right="0">
+<div id="ComponentBase_Monitor_SimulationModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-text="Simulation Mode" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::SimulatedOperation%/pp%" data-tchmi-top-unit="px" data-tchmi-top="3" data-tchmi-right="3" data-tchmi-left="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
-<div id="ComponentBase_Monitor_SimulationIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="90" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="97.5" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Simulation" data-tchmi-creator-visibility="Visible" data-tchmi-indicator="%pp%Component::Status::InSimulation%/pp%" data-tchmi-top-unit="%" data-tchmi-top="5">
+<div id="ComponentBase_Monitor_SimulationIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Simulation" data-tchmi-creator-visibility="Visible" data-tchmi-indicator="%pp%Component::Status::InSimulation%/pp%" data-tchmi-top-unit="px" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-bottom="0">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-cell"
@@ -199,7 +249,7 @@
 </div>
 </div>
 </div>
-    <div id="ComponentBase_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="159" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Visible">
+    <div id="ComponentBase_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="159" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Collapsed">
 
         
         <div id="ComponentBase_Monitor_StaticGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="%ctrl%ComponentBase_Monitor_Title::RenderedHeight%/ctrl%" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content">
@@ -274,7 +324,7 @@
 </script>
 </div>
 </div>
-    <div id="ComponentBase_Monitor_Title" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="px" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-height-mode="Value" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%Component::Config::Name%/pp%" data-tchmi-ignore-escape-sequences="false" data-tchmi-is-enabled="true">
+    <div id="ComponentBase_Monitor_Title" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="%" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-height-mode="Value" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text="%pp%Component::Config::Name%/pp%" data-tchmi-ignore-escape-sequences="false" data-tchmi-is-enabled="true">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [

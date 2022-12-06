@@ -47,24 +47,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 0, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Abort_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -93,24 +78,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Transition_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -139,24 +109,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 150, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Stopped_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -185,24 +140,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(150, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Starting_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -231,24 +171,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(150, 150, 150, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Idle_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -277,24 +202,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Transition_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -323,24 +233,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(0, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Execute_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -369,24 +264,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 150, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Stopped_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -415,24 +295,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 0, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Abort_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -461,24 +326,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 0, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Abort_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -507,24 +357,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Transition_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -553,24 +388,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Transition_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -599,24 +419,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(150, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Starting_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -645,24 +450,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Transition_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -691,24 +481,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(150, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Starting_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -737,24 +512,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(255, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Transition_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -783,24 +543,8 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(150, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "FunctionExpression",
+                  "functionExpression": "%tr%State_Starting_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -829,24 +573,9 @@
                 "active": true,
                 "symbolExpression": "%ctrl%PackML_StateDisplay_StateLabel::BoxShadow%/ctrl%",
                 "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/BoxShadowList",
-                  "value": [
-                    {
-                      "color": {
-                        "color": "rgba(0, 255, 0, 0.7843137)"
-                      },
-                      "offsetX": 0.0,
-                      "offsetXUnit": "px",
-                      "offsetY": 0.0,
-                      "offsetYUnit": "px",
-                      "inset": false,
-                      "blur": 7.0,
-                      "blurUnit": "px",
-                      "spread": 3.0,
-                      "spreadUnit": "px"
-                    }
-                  ]
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%tr%State_Execute_Shadow%/tr%"
                 },
                 "asyncWait": true
               }
@@ -864,9 +593,12 @@
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
-  "indicator-label"
+  "packmlmodule-monitor-label",
+  "packmlmodule-monitor-cell"
 ]
 </script>
+
+
 </div>
 
 

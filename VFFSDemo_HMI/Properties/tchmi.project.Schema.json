@@ -112,6 +112,30 @@
       "frameworkUserControlConfig": "UserControls\\PackML\\PackML_BaseSubModule_Buttons2_Monitor.usercontrol.json",
       "type": "object",
       "id": "tchmi:project#/definitions/PackML_BaseSubModule_Buttons2_Monitor"
+    },
+    "Cylinder_Monitor_Navigation": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Components\\Cylinder_Monitor_Navigation.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/Cylinder_Monitor_Navigation"
+    },
+    "DigitalSensor_Monitor_Navigation": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Components\\DigitalSensor_Monitor_Navigation.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/DigitalSensor_Monitor_Navigation"
+    },
+    "SimpleTextWithLabel": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Utilities\\SimpleTextWithLabel.usercontrol.json",
+      "id": "tchmi:project#/definitions/SimpleTextWithLabel",
+      "type": "object"
     }
   }
 }

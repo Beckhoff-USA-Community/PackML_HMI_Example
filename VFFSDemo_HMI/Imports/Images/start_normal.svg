@@ -5,7 +5,7 @@
 	 height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
 <g id="hintergrund">
 	<g>
-		
+		<!--
 			<image overflow="visible" opacity="0.4" width="92" height="93" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABdCAYAAAAoswH9AAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAoZJREFUeNrs3U1PU0EUxvG5faGk
 QowvC6Nu/P7fy7jQxgoSaeGOM/oMnp7ODKU1Lsz/SU4ot5TFr5PDLZtnCO0MgZySeCjqYK4PwB8F
@@ -20,7 +20,7 @@ cMAJ4IATwAEngAMOOAH8v0yvdCM2hpzgNGv8gtF8vTeTQ8vJvpc1Gp1hEzw65FzYVsrbSgsTPT5t
 rmRo0WMN3HdCBr1r9Gn2U7Nb6futB486teVF+Z35rOu5ZpbG2MPuUmqNsdcG/NfPtk540IvXgU7k
 p6yVWifyzgn3Neu0fh8Pbm86aq3fVfDy6ZNe+9PQm732NUS7p9nZx+/0UPvU2cME+u+c+J38FGAA
 yBndvS78/KEAAAAASUVORK5CYII=" transform="matrix(1 0 0 1 -5 -5.9995)">
-		</image>
+		</image>-->
 		<g>
 			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="3.7769" y1="-3.1685" x2="76.2232" y2="83.1698">
 				<stop  offset="0.5" style="stop-color:#00AF40"/>

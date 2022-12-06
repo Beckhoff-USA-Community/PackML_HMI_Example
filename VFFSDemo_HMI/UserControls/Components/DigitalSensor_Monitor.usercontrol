@@ -8,7 +8,7 @@
 ]
 </script>
     <div id="DigitalSensor_Monitor_PopoutContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-top="0" data-tchmi-height-mode="Value" data-tchmi-height="%f%%ctrl%DigitalSensor_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%DigitalSensor_Monitor_ExpandButton::RenderedHeight%/ctrl%%/f%" data-tchmi-top-unit="px" data-tchmi-creator-visibility="Visible">
-        <div id="DigitalSensor_Monitor_ExpandButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-icon="Imports/Images/arrow-bar-down-white.svg" data-tchmi-icon-height-unit="%" data-tchmi-icon-height="80" data-tchmi-height="20" data-tchmi-height-unit="px" data-tchmi-ignore-escape-sequences="false" data-tchmi-creator-visibility="Visible">
+        <div id="DigitalSensor_Monitor_ExpandButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-icon="Imports/Images/arrow-bar-down-white.svg" data-tchmi-icon-height-unit="%" data-tchmi-icon-height="80" data-tchmi-height="35" data-tchmi-height-unit="px" data-tchmi-ignore-escape-sequences="false" data-tchmi-creator-visibility="Visible">
             
 
             <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
@@ -142,7 +142,7 @@
 </script>
 
             
-<div id="DigitalSensor_Monitor_StandardModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Standard Mode" data-tchmi-width="75" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::StandardOperation%/pp%" data-tchmi-left="12.5" data-tchmi-top="2.5" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
+<div id="DigitalSensor_Monitor_StandardModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Standard Mode" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::StandardOperation%/pp%" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-right="3" data-tchmi-bottom="3">
 
 
 
@@ -151,12 +151,62 @@
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  }
+]
+</script>
 </div>
-<div id="DigitalSensor_Monitor_SimulationModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-left="12.5" data-tchmi-left-unit="%" data-tchmi-text="Simulation Mode" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-width="75" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::SimulatedOperation%/pp%">
+<div id="DigitalSensor_Monitor_SimulationModeButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="%" data-tchmi-left="3" data-tchmi-left-unit="px" data-tchmi-text="Simulation Mode" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-state-symbol="%pp%Component::Command::SimulatedOperation%/pp%" data-tchmi-right="3" data-tchmi-bottom="3">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
 ]
 </script>
 </div>
@@ -164,7 +214,7 @@
 
         
     </div>
-    <div id="DigitalSensor_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="159" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Visible">
+    <div id="DigitalSensor_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="159" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Collapsed">
 
         
         <div id="DigitalSensor_Monitor_StaticGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="%ctrl%DigitalSensor_Monitor_Title::RenderedHeight%/ctrl%" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content">

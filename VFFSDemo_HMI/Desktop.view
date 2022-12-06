@@ -1,10 +1,11 @@
 ﻿<div id="Desktop" data-tchmi-type="TcHmi.Controls.System.TcHmiView" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-width="100" data-tchmi-height-unit="%" data-tchmi-height="100" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width="100" data-tchmi-background-image-height="100" data-tchmi-creator-viewport-width="1366" data-tchmi-creator-viewport-height="768" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
   
-<div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="65" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-bottom="0" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-is-enabled="true" data-tchmi-text-font-size="12" data-tchmi-creator-locked="True" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-breadcrumb="%ctrl%Breadcrumb%/ctrl%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div id="Navigation_Left" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiNavigation" data-tchmi-width="65" data-tchmi-left="0" data-tchmi-top="%ctrl%Header_Top::Height%/ctrl%" data-tchmi-bottom="0" data-tchmi-navigation-orientation="Vertical" data-tchmi-keep-lowest-level="true" data-tchmi-is-enabled="true" data-tchmi-text-font-size="12" data-tchmi-creator-locked="True" data-tchmi-target-region="%ctrl%Region_Center%/ctrl%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
-"divider",
-"divider-left"
+<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
+[
+  "divider",
+  "divider-left"
 ]
 </script><script data-tchmi-target-attribute="data-tchmi-navigation-structure" type="application/json">
 [
@@ -42,7 +43,7 @@
             "content": "Pages/EquipmentModules/Sealer/Components/SealerAxis.content"
           },
           {
-            "name": "Seal Bar",
+            "name": "%l%L_SealBar%/l%",
             "content": "Pages/EquipmentModules/Sealer/Components/SealBar.content"
           }
         ]
@@ -64,6 +65,18 @@
     ]
   },
   {
+    "name": "Recipe",
+    "content": "Pages/Recipe/RecipeManagement.content",
+    "subItem": [],
+    "accessRights": [
+      {
+        "accessright": "operate",
+        "group": "Operator",
+        "permission": "Deny"
+      }
+    ]
+  },
+  {
     "name": "%l%L_Blank%/l%",
     "content": "Pages/ProductionStatus.content",
     "icon_a": "Imports/Images/scope_start_active.svg",
@@ -75,7 +88,19 @@
     "content": "Pages/Settings.content",
     "icon_a": "Themes/SPT-Base/Images/Settings/SettingsOmacPackML_Active.png",
     "icon_n": "Themes/SPT-Base/Images/Settings/SettingsOmacPackML_Normal.png",
-    "icon_p": "Themes/SPT-Base/Images/Settings/SettingsOmacPackML_Normal.png"
+    "icon_p": "Themes/SPT-Base/Images/Settings/SettingsOmacPackML_Normal.png",
+    "accessRights": [
+      {
+        "accessright": "operate",
+        "group": "Operator",
+        "permission": "Deny"
+      },
+      {
+        "accessright": "operate",
+        "group": "Maintenance",
+        "permission": "Deny"
+      }
+    ]
   },
   {
     "name": "%l%L_Blank%/l%",
@@ -89,10 +114,125 @@
     "content": "Pages/PackMLStateDiagram.content",
     "icon_a": "Imports/Images/hand_operation_active.svg",
     "icon_n": "Imports/Images/hand_operation_normal.svg",
-    "icon_p": "Imports/Images/hand_operation_pressed.svg"
+    "icon_p": "Imports/Images/hand_operation_pressed.svg",
+    "subItem": [
+      {
+        "name": "%l%L_PullWheels%/l%",
+        "content": "Pages/EquipmentModules/PullWheels/PullWheels_PackML.content"
+      },
+      {
+        "name": "%l%L_Sealer%/l%",
+        "content": "Pages/EquipmentModules/Sealer/Sealer_PackML.content"
+      },
+      {
+        "name": "%l%L_Unwind%/l%",
+        "content": "Pages/EquipmentModules/Unwind/Unwind_PackML.content"
+      },
+      {
+        "name": "Pack Tags",
+        "content": "Pages/Recipe/PackTags.content",
+        "accessRights": [
+          {
+            "accessright": "operate",
+            "group": "Operator",
+            "permission": "Deny"
+          }
+        ]
+      }
+    ],
+    "accessRights": [
+      {
+        "accessright": "operate",
+        "group": "Operator",
+        "permission": "Deny"
+      }
+    ]
   }
 ]
-</script></div><div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="55" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</script>
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "%s%TcHmiEventLogger.Diagnostics::TARGET_SYSTEMS::Local::activeAlarmsCount%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "integer",
+                  "symbolExpression": "%s%TcHmiEventLogger.Diagnostics::TARGET_SYSTEMS::Local::activeAlarmsCount%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "integer",
+                  "value": 0
+                },
+                "compareOperator": "!=",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "let navbar = TcHmi.Controls.get('Navigation_Left');",
+                  "",
+                  "if (navbar) {",
+                  "    let items = navbar.getNavigationStructure();",
+                  "",
+                  "    items.forEach((item) => {",
+                  "        if (item.content === 'Pages/Events.content') {",
+                  "            let control = item.tchmi_button;",
+                  "            control.setClassNames(['red-glowing']);",
+                  "        }",
+                  "    });",
+                  "}"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "JavaScript",
+                "active": true,
+                "sourceLines": [
+                  "let navbar = TcHmi.Controls.get('Navigation_Left');",
+                  "",
+                  "if (navbar) {",
+                  "    let items = navbar.getNavigationStructure();",
+                  "",
+                  "    items.forEach((item) => {",
+                  "        if (item.content === 'Pages/Events.content') {",
+                  "            let control = item.tchmi_button;",
+                  "            control.setClassNames([]);",
+                  "        }",
+                  "    });",
+                  "}"
+                ],
+                "injectContextObject": false,
+                "asyncWait": true,
+                "waitMode": "Synchronous"
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div><div id="Header_Top" data-tchmi-type="TcHmi.Controls.BaseTemplate.TcHmiHeader" data-tchmi-height="55" data-tchmi-left="0" data-tchmi-top="0" data-tchmi-right="0" data-tchmi-expandable="true" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">[
 "divider",
 "divider-top"
@@ -117,34 +257,20 @@
     "targetContent": "Pages/MachineOverview.content"
   },
   {
-    "itemType": "EventLine",
-    "priority": "5",
-    "itemAlign": "Right",
-    "prefWidth": 800.0,
+    "itemType": "Text",
+    "priority": "3",
+    "itemAlign": "Left",
+    "prefWidth": 160.0,
     "prefWidthUnit": "px",
     "prefHeight": 48.0,
     "prefHeightUnit": "px",
-    "minWidth": 288.0,
+    "minWidth": 96.0,
     "minWidthUnit": "px",
     "classList": [],
     "accessRights": [],
-    "filter": [
-      {
-        "path": "alarmState",
-        "comparator": "==",
-        "value": 0
-      },
-      {
-        "logic": "AND"
-      },
-      {
-        "path": "domain",
-        "comparator": "==",
-        "value": "TcHmiEventLogger"
-      }
-    ],
-    "targetRegion": "%ctrl%Region_Center%/ctrl%",
-    "targetContent": "Pages/Events.content"
+    "text": "%f%\"Current Recipe: \"+%s%PLC1.MAIN.VFFSDemo.CurrentRecipeName%/s%%/f%",
+    "targetRegion": "%ctrl%Region_Center::TargetContent%/ctrl%",
+    "targetContent": "Pages/Recipe/RecipeManagement.content"
   },
   {
     "itemType": "AdsState",
@@ -230,7 +356,7 @@
     "timeDisplayLayout": "TimeDateMultiLine"
   }
 ]
-</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-scrolling="Yes" data-tchmi-bottom="0" data-tchmi-right="0" data-tchmi-is-enabled="true" data-tchmi-top="64" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+</script></div><div id="Region_Center" data-tchmi-type="TcHmi.Controls.System.TcHmiRegion" data-tchmi-left="%ctrl%Navigation_Left::Width%/ctrl%" data-tchmi-scrolling="Yes" data-tchmi-bottom="%ctrl%Footer::RenderedHeight%/ctrl%" data-tchmi-right="0" data-tchmi-is-enabled="true" data-tchmi-top="64" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json"></script></div>><script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -283,9 +409,9 @@
     "width": 1.0,
     "widthUnit": "factor",
     "widthMode": "Value",
-    "maxWidth": 225.0,
+    "maxWidth": 170.0,
     "maxWidthUnit": "px",
-    "minWidth": 225.0,
+    "minWidth": 170.0,
     "minWidthUnit": "px",
     "overflow": false
   },

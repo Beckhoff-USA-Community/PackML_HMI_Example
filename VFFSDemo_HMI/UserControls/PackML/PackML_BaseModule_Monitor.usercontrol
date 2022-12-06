@@ -6,14 +6,10 @@
     <div id="PackML_ModuleBase_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-is-enabled="true" data-tchmi-creator-locked="True">
 
         
-        <div id="PackML_ModuleBase_Monitor_StaticContainer_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="%ctrl%PackML_ModuleBase_Monitor_ModuleName::RenderedHeight%/ctrl%" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content" data-tchmi-creator-locked="True">
+        <div id="PackML_ModuleBase_Monitor_StaticContainer_Grid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="%ctrl%PackML_ModuleBase_Monitor_ModuleName::RenderedHeight%/ctrl%" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
             <div id="PackML_ModuleBase_Monitor_StateDisplay" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-target-user-control="UserControls/PackML/PackML_StateDisplay.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-state="%pp%Module::CurrentState%/pp%" data-tchmi-is-enabled="true" data-tchmi-zindex="3" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-currentstate="%pp%Module::Status::State%/pp%" data-tchmi-creator-locked="True">
             
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
-[
-  "packmlmodule-monitor-cell"
-]
-</script>
+
 </div>
 
             <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
@@ -29,7 +25,7 @@
     "overflow": false
   },
   {
-    "height": 2.0,
+    "height": 1.0,
     "heightUnit": "px",
     "heightMode": "Value",
     "maxHeightUnit": "px",
@@ -40,62 +36,44 @@
 </script>
 
             <script data-tchmi-target-attribute="data-tchmi-column-options" type="application/json">
-                [
-                {
-                "width": 1.0,
-                "widthUnit": "factor",
-                "widthMode": "Value",
-                "maxWidth": 100.0,
-                "maxWidthUnit": "%",
-                "minWidth": 75.0,
-                "minWidthUnit": "px",
-                "overflow": false
-                },
-                {
-                "width": 1.0,
-                "widthUnit": "factor",
-                "widthMode": "Value",
-                "maxWidth": 100.0,
-                "maxWidthUnit": "%",
-                "minWidth": 75.0,
-                "minWidthUnit": "px",
-                "overflow": false
-                },
-                {
-                "width": 1.0,
-                "widthUnit": "factor",
-                "widthMode": "Value",
-                "maxWidth": 100.0,
-                "maxWidthUnit": "%",
-                "minWidth": 75.0,
-                "minWidthUnit": "px",
-                "overflow": false
-                }
-                ]
-            </script>
-            <div id="PackML_ModuleBase_Monitor_ModeCommand" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_ModeCommand.usercontrol" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="2" data-tchmi-mode="%pp%Module::eMode%/pp%" data-tchmi-commandpulse="%pp%Module::bIncomingHMIRequest%/pp%" data-tchmi-commandpulse2="%pp%Module::bModeCommandHMIRequest%/pp%" data-tchmi-modecommand="%pp%Module::Command::Mode%/pp%" data-tchmi-confirmation="%pp%Module::bHMICommandConfirmation%/pp%" data-tchmi-modenames="%pp%Module::Config::ModeNames%/pp%" data-tchmi-currentmode="%pp%Module::Status::Mode%/pp%" data-tchmi-enable="%pp%Module::Status::HMIControlAvailable%/pp%" data-tchmi-creator-locked="True">
-            
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
-  "packmlmodule-monitor-cell"
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "%",
+    "minWidth": 75.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  },
+  {
+    "width": 1.0,
+    "widthUnit": "factor",
+    "widthMode": "Value",
+    "maxWidth": 100.0,
+    "maxWidthUnit": "%",
+    "minWidth": 75.0,
+    "minWidthUnit": "px",
+    "overflow": false
+  }
 ]
 </script>
-</div>
-            <div id="PackML_ModuleBase_Monitor_StateCommand" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_StateCommand.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-state="%pp%Module::eState%/pp%" data-tchmi-commandpulse="%pp%Module::bIncomingHMIRequest%/pp%" data-tchmi-statecommand="%pp%Module::Command::State%/pp%" data-tchmi-confirmation="%pp%Module::bHMICommandConfirmation%/pp%" data-tchmi-commandpulse2="%pp%Module::bStateCommandHMIRequest%/pp%" data-tchmi-grid-column-index="1" data-tchmi-enable="%pp%Module::Status::HMIControlAvailable%/pp%" data-tchmi-currentstate="%pp%Module::Status::State%/pp%" data-tchmi-creator-locked="True">
+            <div id="PackML_ModuleBase_Monitor_ModeCommand" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/PackML/PackML_ModeCommand.usercontrol" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="1" data-tchmi-mode="%pp%Module::eMode%/pp%" data-tchmi-commandpulse="%pp%Module::bIncomingHMIRequest%/pp%" data-tchmi-commandpulse2="%pp%Module::bModeCommandHMIRequest%/pp%" data-tchmi-modecommand="%pp%Module::Command::Mode%/pp%" data-tchmi-confirmation="%pp%Module::bHMICommandConfirmation%/pp%" data-tchmi-modenames="%pp%Module::Config::ModeNames%/pp%" data-tchmi-currentmode="%pp%Module::Status::Mode%/pp%" data-tchmi-enable="%pp%Module::Status::HMIControlAvailable%/pp%" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-bottom="0" data-tchmi-height="100">
             
-<script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
-[
-  "packmlmodule-monitor-cell"
-]
-</script>
+
+
+
 </div>
-        </div>
-    <div id="PackML_ModuleBase_Monitor_ModuleName" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="%" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-text="%pp%Module::Config::Name%/pp%" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-locked="True">
+        
+
+</div>
+    <div id="PackML_ModuleBase_Monitor_ModuleName" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="50" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-text="%pp%Module::Config::Name%/pp%" data-tchmi-ignore-escape-sequences="false" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-creator-locked="True" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
-  "packmlmodule-monitor-cell",
-  "packmlmodule-monitor-title"
+  "packmlmodule-monitor-label",
+  "packmlmodule-monitor-cell"
 ]
 </script>
 

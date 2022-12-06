@@ -1,4 +1,4 @@
-﻿<div id="Events" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true">
+﻿<div id="Events" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-creator-viewport-width="1280" data-tchmi-creator-viewport-height="720">
   <div id="TcHmiContainer_Events_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right-unit="px" data-tchmi-right="16" data-tchmi-bottom="0" data-tchmi-is-enabled="true">
 
     <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -7,26 +7,32 @@
       ]
     </script>
 
-    <div id="TcHmiEventGrid_Events_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEventGrid" data-tchmi-height-unit="px" data-tchmi-left="16" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="True" data-tchmi-top="16" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="16" data-tchmi-bottom="16" data-tchmi-is-enabled="true" data-tchmi-allow-details-popup="true" data-tchmi-ignore-escape-sequences="false">
+    <div id="TcHmiEventGrid_Events_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiEventGrid" data-tchmi-height-unit="px" data-tchmi-left="10" data-tchmi-left-unit="px" data-tchmi-show-menu-bar="True" data-tchmi-top="17" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-right="22" data-tchmi-bottom="15" data-tchmi-is-enabled="true" data-tchmi-allow-details-popup="true" data-tchmi-ignore-escape-sequences="false">
       
       <script data-tchmi-target-attribute="data-tchmi-columns" type="application/json">
-        [
-        {
-        "columnName": "type"
-        },
-        {
-        "columnName": "severity"
-        },
-        {
-        "columnName": "timeAndDateRaised"
-        },
-        {
-        "columnName": "text",
-		"width": 1,
-		"widthUnit": "factor"
-        }
-        ]
-      </script>
+[
+  {
+    "columnName": "type",
+    "width": 10,
+    "widthUnit": "%"
+  },
+  {
+    "columnName": "severity",
+    "width": 10,
+    "widthUnit": "%"
+  },
+  {
+    "columnName": "timeAndDateRaised",
+    "width": 20,
+    "widthUnit": "%"
+  },
+  {
+    "columnName": "text",
+    "width": 60,
+    "widthUnit": "%"
+  }
+]
+</script>
       <script data-tchmi-target-attribute="data-tchmi-sorting" type="application/json">
         [
         {
@@ -44,8 +50,108 @@
       </script>
     
 
+
+<script data-tchmi-target-attribute="data-tchmi-filter" type="application/json">
+[
+  {
+    "path": "alarmState",
+    "comparator": "==",
+    "value": 0
+  }
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "configure",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "viewDetails",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Admin",
+    "permission": "Allow"
+  }
+]
+</script>
 </div>
-  </div>
+  
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "observe",
+    "group": "SetupTech",
+    "permission": "Allow"
+  }
+]
+</script>
+</div>
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [

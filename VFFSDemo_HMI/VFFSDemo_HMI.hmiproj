@@ -12,7 +12,7 @@
     <HmiTitle>Please enter your Title...</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
-    <HmiCommunicationServerPort>3002</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3003</HmiCommunicationServerPort>
     <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
     <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
     <HmiServerVersion>Latest</HmiServerVersion>
@@ -22,8 +22,8 @@
     <TargetFramework>native1.12-tchmi</TargetFramework>
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
     <Name>VFFSDemo_HMI</Name>
-    <HmiCommunicationRouterPort>10103</HmiCommunicationRouterPort>
-    <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
+    <HmiCommunicationRouterPort>10104</HmiCommunicationRouterPort>
+    <HmiCommunicationServerAuthPort>13001</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.756.1</HmiInitial>
     <HmiRecent>1.12.758.8</HmiRecent>
     <HmiServerNodeAdvancedView>True</HmiServerNodeAdvancedView>
@@ -192,13 +192,116 @@
     <Content Include="NavigateToDetailPage.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\EquipmentModules\PullWheels\Components\Cylinder.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\PullWheels\Components\PullWheel_Left.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\PullWheels\Components\PullWheel_Right.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\PullWheels\PullWheels.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\PullWheels\PullWheels_PackML.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Sealer\Components\SealBar.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Sealer\Components\SealerAxis.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Sealer\Sealer_PackML.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Sealer\Sealer.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Unwind\Components\Sensor.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Unwind\Components\UnwindAxis.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Unwind\UnwindEM.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\EquipmentModules\Unwind\Unwind_PackML.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Events.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\LoginPage.html">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\MachineOverview.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Pages\PackMLStateDiagram.content">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Pages\Recipe\PackTags.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Recipe\RecipeManagement.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Pages\Settings.content">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Pages\ProductionStatus.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertDatagridToRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\ConvertDatagridToRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertDatagridToRecipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertRecipeToDatagrid.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\ConvertRecipeToDatagrid.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\ConvertRecipeToDatagrid.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\DeleteRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\DeleteRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\DeleteRecipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\DownloadRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\DownloadRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\DownloadRecipe.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\ListRecipesAsReferenceArray.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\ListRecipesAsReferenceArray.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\ListRecipesAsReferenceArray.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\UpdateDatagridFromTarget.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\UpdateDatagridFromTarget.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\UpdateDatagridFromTarget.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RecipeFunctions\UploadRecipe.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>RecipeFunctions\UploadRecipe.js</DependentUpon>
+    </Content>
+    <Content Include="RecipeFunctions\UploadRecipe.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.default.json">
@@ -208,6 +311,15 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Storage.json">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Server\TcHmiSqliteHistorize\TcHmiSqliteHistorize.Config.default.json">
@@ -231,6 +343,123 @@
       <DependentUpon>SetEventLoggerFilters.js</DependentUpon>
     </Content>
     <Content Include="SetEventLoggerFilters.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-Dark.theme">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-DarkStyle.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Background.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Beckhoff_Logo.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Events\message_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Events\message_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Events\message_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Placeholder\placeholder_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Placeholder\placeholder_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Placeholder\placeholder_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Settings\settings_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Settings\settings_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Settings\settings_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Base.theme">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\BaseStyle.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\CustomControlClasses.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Icons\icons_previous_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Icons\icons_previous_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Background.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Events\message_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Events\message_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Events\message_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Placeholder\placeholder_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Placeholder\placeholder_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Placeholder\placeholder_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Settings\settings_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Settings\settings_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Settings\settings_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Icons\icons_previous_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Icons\icons_previous_pressed.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar\Images\menu.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar\Style.css">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Themes\SPT-Base\Images\Background.png">
@@ -309,12 +538,26 @@
     <Content Include="TrimDecimalNumber.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls\Components\AxisBase_Monitor_Navigation.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Components\AxisBase_Monitor_Navigation.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Components\AxisBase_Monitor_Navigation.usercontrol</DependentUpon>
+    </Content>
     <Content Include="UserControls\Components\AxisBase_Monitor.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\Components\AxisBase_Monitor.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>UserControls\Components\AxisBase_Monitor.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\Components\ComponentBase_Monitor_Navigation.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Components\ComponentBase_Monitor_Navigation.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Components\ComponentBase_Monitor_Navigation.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\Components\ComponentBase_Monitor.usercontrol">
       <SubType>Content</SubType>
@@ -323,12 +566,26 @@
       <SubType>Content</SubType>
       <DependentUpon>UserControls\Components\ComponentBase_Monitor.usercontrol</DependentUpon>
     </Content>
+    <Content Include="UserControls\Components\Cylinder_Monitor_Navigation.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Components\Cylinder_Monitor_Navigation.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Components\Cylinder_Monitor_Navigation.usercontrol</DependentUpon>
+    </Content>
     <Content Include="UserControls\Components\Cylinder_Monitor.usercontrol">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UserControls\Components\Cylinder_Monitor.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>UserControls\Components\Cylinder_Monitor.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\Components\DigitalSensor_Monitor_Navigation.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Components\DigitalSensor_Monitor_Navigation.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Components\DigitalSensor_Monitor_Navigation.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\Components\DigitalSensor_Monitor.usercontrol">
       <SubType>Content</SubType>
@@ -343,20 +600,6 @@
     <Content Include="UserControls\PackML\PackML_BaseSubModule_Buttons2_Monitor.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>UserControls\PackML\PackML_BaseSubModule_Buttons2_Monitor.usercontrol</DependentUpon>
-    </Content>
-    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons2_Monitor.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons2_Monitor.usercontrol.json">
-      <SubType>Content</SubType>
-      <DependentUpon>UserControls\PackML\PackML_BaseModule_Buttons2_Monitor.usercontrol</DependentUpon>
-    </Content>
-    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons_Monitor.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UserControls\PackML\PackML_BaseModule_Buttons_Monitor.usercontrol.json">
-      <SubType>Content</SubType>
-      <DependentUpon>UserControls\PackML\PackML_BaseModule_Buttons_Monitor.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\PackML\PackML_BaseSubModule_Monitor.usercontrol">
       <SubType>Content</SubType>
@@ -392,13 +635,6 @@
     <Content Include="UserControls\PackML\PackML_ModeDisplay.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>UserControls\PackML\PackML_ModeDisplay.usercontrol</DependentUpon>
-    </Content>
-    <Content Include="UserControls\PackML\PackML_StateCommand.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UserControls\PackML\PackML_StateCommand.usercontrol.json">
-      <SubType>Content</SubType>
-      <DependentUpon>UserControls\PackML\PackML_StateCommand.usercontrol</DependentUpon>
     </Content>
     <Content Include="UserControls\PackML\PackML_StateDiagram.usercontrol">
       <SubType>Content</SubType>
@@ -467,7 +703,7 @@
     <Folder Include="Imports\Videos" />
     <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
-    <Folder Include="Pages\" />
+    <Folder Include="Pages" />
     <Folder Include="Pages\EquipmentModules" />
     <Folder Include="Pages\EquipmentModules\PullWheels" />
     <Folder Include="Pages\EquipmentModules\PullWheels\Components" />
@@ -475,9 +711,12 @@
     <Folder Include="Pages\EquipmentModules\Sealer\Components" />
     <Folder Include="Pages\EquipmentModules\Unwind" />
     <Folder Include="Pages\EquipmentModules\Unwind\Components" />
+    <Folder Include="Pages\Recipe" />
+    <Folder Include="RecipeFunctions" />
     <Folder Include="Server\ADS\" />
     <Folder Include="Server\TcHmiEventLogger" />
     <Folder Include="Server\TcHmiLua\" />
+    <Folder Include="Server\TcHmiRecipeManagement" />
     <Folder Include="Server\TcHmiSqliteHistorize" />
     <Folder Include="Server\TcHmiSqliteLogger\" />
     <Folder Include="Server\TcHmiSrv\" />
@@ -489,43 +728,6 @@
     <Folder Include="Properties" />
     <Content Include=".eslintrc.json">
       <Visible>false</Visible>
-    </Content>
-    <Content Include="Pages\EquipmentModules\PullWheels\Components\Cylinder.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\PullWheels\Components\PullWheel_Left.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\PullWheels\Components\PullWheel_Right.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\PullWheels\PullWheels.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\Sealer\Components\SealBar.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\Sealer\Components\SealerAxis.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\Sealer\Sealer.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\Unwind\Components\Sensor.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\Unwind\Components\UnwindAxis.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\EquipmentModules\Unwind\UnwindEM.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Pages\Events.content">
-      <SubType>Content</SubType>
-      <Cache>True</Cache>
-    </Content>
-    <Content Include="Pages\Settings.content">
-      <SubType>Content</SubType>
     </Content>
     <Content Include="Server\ADS\ADS.Config.default.json">
       <SubType>Content</SubType>
@@ -755,13 +957,25 @@
       <SubType>Content</SubType>
       <Visible>true</Visible>
     </Content>
-    <Content Include="Pages\LoginPage.html">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="Desktop.view">
       <SubType>Content</SubType>
       <Visible>true</Visible>
     </Content>
+    <Folder Include="Themes\Base" />
+    <Folder Include="Themes\Base-Dark" />
+    <Folder Include="Themes\Base-Dark\Images" />
+    <Folder Include="Themes\Base-Dark\Images\Events" />
+    <Folder Include="Themes\Base-Dark\Images\Placeholder" />
+    <Folder Include="Themes\Base-Dark\Images\Settings" />
+    <Folder Include="Themes\Base\Icons" />
+    <Folder Include="Themes\Base\Images" />
+    <Folder Include="Themes\Base\Images\Events" />
+    <Folder Include="Themes\Base\Images\Placeholder" />
+    <Folder Include="Themes\Base\Images\Settings" />
+    <Folder Include="Themes\Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation" />
+    <Folder Include="Themes\Base\TcHmi.Controls.BaseTemplate.TcHmiNavigation\Icons" />
+    <Folder Include="Themes\Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar" />
+    <Folder Include="Themes\Base\TcHmi.Controls.ResponsiveNavigation.TcHmiNavigationBar\Images" />
     <Folder Include="Themes\SPT-Base\" />
     <Folder Include="Themes\SPT-Base\Images" />
     <Folder Include="Themes\SPT-Base\Images\Events" />

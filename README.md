@@ -1,10 +1,20 @@
 # Introduction 
-The purpose of this project is to serve as an example of how to setup a HMI project using the current PackML base framework it is provided publically under the License in the repository.
-
-This sample is created by Beckhoff Automation LLC., and is provided as-is under the Zero-Clause BSD license.
+TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
 # Getting Started
-Please ensure you have nuget.org included as a package source in Visual Studio/TwinCAT XAE.  You can check this by using Tools->Options->Nuget Package Manager->Package Sources.  The source URL for nuget.org is https://api.nuget.org/v3/index.json
+TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
+1.	Installation process
+2.	Software dependencies
+3.	Latest releases
+4.	API references
 
 # Build and Test
-Open project and use Live View
+TODO: Describe and show how to build your code and run the tests. 
+
+# Contribute
+TODO: Explain how other users and developers can contribute to make your code better. 
+
+If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
+- [ASP.NET Core](https://github.com/aspnet/Home)
+- [Visual Studio Code](https://github.com/Microsoft/vscode)
+- [Chakra Core](https://github.com/Microsoft/ChakraCore)

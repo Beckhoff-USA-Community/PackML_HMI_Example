@@ -1,4 +1,4 @@
-﻿<div id="AxisBase_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-top="0" data-tchmi-left="0" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible">
+﻿<div id="AxisBase_Monitor" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControl" data-tchmi-creator-viewport-width="500" data-tchmi-creator-viewport-height="500" data-tchmi-width-mode="Value" data-tchmi-height-mode="Content" data-tchmi-zindex="2" data-tchmi-zindex="2" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
@@ -6,7 +6,7 @@
   "component-monitor-container"
 ]
 </script>
-<div id="AxisBase_Monitor_PopoutContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-top="0" data-tchmi-height-mode="Value" data-tchmi-height="%f%%ctrl%AxisBase_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%AxisBase_Monitor_ExpandButton::RenderedHeight%/ctrl%%/f%" data-tchmi-zindex="1" data-tchmi-creator-visibility="Visible" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
+<div id="AxisBase_Monitor_PopoutContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-height-mode="Value" data-tchmi-height="%f%%ctrl%AxisBase_Monitor_StaticContainer::RenderedHeight%/ctrl%+%ctrl%AxisBase_Monitor_ExpandButton::RenderedHeight%/ctrl%%/f%" data-tchmi-zindex="1" data-tchmi-creator-visibility="Visible" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center" data-tchmi-creator-locked="True">
 <div id="AxisBase_Monitor_ExpandButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-zindex="6" data-tchmi-bottom="1.7" data-tchmi-bottom-unit="%" data-tchmi-icon="Imports/Images/arrow-bar-down-white.svg" data-tchmi-icon-height-unit="%" data-tchmi-icon-height="80" data-tchmi-height="35" data-tchmi-icon-horizontal-alignment="Center" data-tchmi-icon-vertical-alignment="Center" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
@@ -104,7 +104,7 @@
 ]
 </script>
 </div>
-<div id="AxisBase_Monitor_PopoutGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-cell-wrap="true" data-tchmi-bottom="%ctrl%AxisBase_Monitor_ExpandButton::RenderedHeight%/ctrl%" data-tchmi-is-enabled="true">
+<div id="AxisBase_Monitor_PopoutGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-cell-wrap="true" data-tchmi-bottom="%ctrl%AxisBase_Monitor_ExpandButton::RenderedHeight%/ctrl%" data-tchmi-is-enabled="true">
 <script data-tchmi-target-attribute="data-tchmi-row-options" type="application/json">
 [
   {
@@ -147,40 +147,165 @@
   "animate-all-properties"
 ]
 </script>
-<div id="AxisBase_Monitor_ResetButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Reset" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Component::Command::Reset%/pp%">
+<div id="AxisBase_Monitor_ResetButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Reset" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Component::Command::Reset%/pp%" data-tchmi-right="3" data-tchmi-bottom="3">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  }
+]
+</script>
 </div>
-<div id="AxisBase_Monitor_PopoutGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-grid-row-index="1" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5">
-<div id="AxisBase_Monitor_JogPButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Jog -" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="2" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Axis::Command::JogSlow_Backward%/pp%" data-tchmi-grid-row-index="1">
+<div id="AxisBase_Monitor_PopoutGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-grid-row-index="1" data-tchmi-left-unit="%" data-tchmi-top-unit="%">
+<div id="AxisBase_Monitor_JogPButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Jog -" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="2" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Axis::Command::JogSlow_Backward%/pp%" data-tchmi-grid-row-index="1" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
-<div id="AxisBase_Monitor_JogPPButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Jog --" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="3" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Axis::Command::JogFast_Backward%/pp%" data-tchmi-grid-row-index="1">
+<div id="AxisBase_Monitor_JogPPButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Jog --" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="3" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Axis::Command::JogFast_Backward%/pp%" data-tchmi-grid-row-index="1" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
-<div id="AxisBase_Monitor_JogMButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Jog +" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="1" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Axis::Command::JogSlow_Forward%/pp%" data-tchmi-grid-row-index="1">
+<div id="AxisBase_Monitor_JogMButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Jog +" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="1" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Axis::Command::JogSlow_Forward%/pp%" data-tchmi-grid-row-index="1" data-tchmi-right="3" data-tchmi-bottom="3">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
+]
+</script>
 </div>
-<div id="AxisBase_Monitor_JogMMButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="95" data-tchmi-height-unit="%" data-tchmi-text="Jog ++" data-tchmi-width="95" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="0" data-tchmi-left-unit="%" data-tchmi-left="2.5" data-tchmi-top="2.5" data-tchmi-top-unit="%" data-tchmi-state-symbol="%pp%Axis::Command::JogFast_Forward%/pp%" data-tchmi-grid-row-index="1">
+<div id="AxisBase_Monitor_JogMMButton" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height-unit="%" data-tchmi-text="Jog ++" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-grid-column-index="0" data-tchmi-left-unit="px" data-tchmi-left="3" data-tchmi-top="3" data-tchmi-top-unit="px" data-tchmi-state-symbol="%pp%Axis::Command::JogFast_Forward%/pp%" data-tchmi-grid-row-index="1" data-tchmi-right="7" data-tchmi-bottom="6">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-button"
+]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-access-config" type="application/json">
+[
+  {
+    "accessright": "operate",
+    "group": "Admin",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Maintenance",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "SetupTech",
+    "permission": "Allow"
+  },
+  {
+    "accessright": "operate",
+    "group": "Operator",
+    "permission": "Deny"
+  }
 ]
 </script>
 </div>
@@ -230,7 +355,7 @@
 ]
 </script>
 </div>
-<div id="AxisBase_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-zindex="10" data-tchmi-is-enabled="true" data-tchmi-height="200" data-tchmi-creator-visibility="Visible">
+<div id="AxisBase_Monitor_StaticContainer" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-height-mode="Content" data-tchmi-zindex="10" data-tchmi-is-enabled="true" data-tchmi-creator-visibility="Collapsed" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 
 <div id="AxisBase_Monitor_StaticGrid" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true" data-tchmi-height-mode="Content" data-tchmi-top="%ctrl%AxisBase_Monitor_Title::RenderedHeight%/ctrl%">
@@ -281,21 +406,24 @@
 <div id="AxisBase_Monitor_EnabledIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Enabled" data-tchmi-indicator="%pp%Axis::Status::Enabled%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
-  "component-monitor-cell"
+  "component-monitor-cell",
+  "component-monitor-label"
 ]
 </script>
 </div>
 <div id="AxisBase_Monitor_StoppedIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="2" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="Stopped" data-tchmi-indicator="%pp%Axis::Status::Stopped%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
-  "component-monitor-cell"
+  "component-monitor-cell",
+  "component-monitor-label"
 ]
 </script>
 </div>
 <div id="AxisBase_Monitor_InPositionIndicator" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-grid-column-index="3" data-tchmi-grid-row-index="0" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithIndicator.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-label="In Position" data-tchmi-indicator="%pp%Axis::Status::InPosition%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
-  "component-monitor-cell"
+  "component-monitor-cell",
+  "component-monitor-label"
 ]
 </script>
 </div>
@@ -361,28 +489,28 @@
 </div>
 </div>
 <div id="AxisBase_Monitor_StaticGrid_Row2" data-tchmi-type="TcHmi.Controls.System.TcHmiGrid" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-grid-row-index="1" data-tchmi-is-enabled="true" data-tchmi-cell-wrap="true">
-<div id="AxisBase_Monitor_PositionFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Position:" data-tchmi-unit="mm" data-tchmi-data="%pp%Axis::Status::ActualPosition%/pp%" data-tchmi-left="0" data-tchmi-top="0">
+<div id="AxisBase_Monitor_PositionFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Position:" data-tchmi-unit="mm" data-tchmi-data="%pp%Axis::Status::ActualPosition%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-cell"
 ]
 </script>
 </div>
-<div id="AxisBase_Monitor_LagFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Lag:" data-tchmi-unit="mm" data-tchmi-grid-column-index="1" data-tchmi-data="%pp%Axis::Status::PositionLag%/pp%" data-tchmi-top="-1">
+<div id="AxisBase_Monitor_LagFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Lag:" data-tchmi-unit="mm" data-tchmi-grid-column-index="1" data-tchmi-data="%pp%Axis::Status::PositionLag%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-cell"
 ]
 </script>
 </div>
-<div id="AxisBase_Monitor_VelocityFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Velocity:" data-tchmi-unit="mm/s" data-tchmi-grid-column-index="2" data-tchmi-data="%f%Number.parseFloat(%pp%Axis::Status::ActualVelocity%/pp%).toFixed(2)%/f%" data-tchmi-top="-1">
+<div id="AxisBase_Monitor_VelocityFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Velocity:" data-tchmi-unit="mm/s" data-tchmi-grid-column-index="2" data-tchmi-data="%f%Number.parseFloat(%pp%Axis::Status::ActualVelocity%/pp%).toFixed(2)%/f%">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-cell"
 ]
 </script>
 </div>
-<div id="AxisBase_Monitor_TorqueFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Torque:" data-tchmi-unit="%" data-tchmi-grid-column-index="3" data-tchmi-data="%pp%Axis::Status::ActualTorque%/pp%" data-tchmi-left="-3" data-tchmi-top="-1">
+<div id="AxisBase_Monitor_TorqueFeedback" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-target-user-control="UserControls/Utilities/LabelWithDataFeedback.usercontrol" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-is-enabled="true" data-tchmi-grid-row-index="1" data-tchmi-label="Torque:" data-tchmi-unit="%" data-tchmi-grid-column-index="3" data-tchmi-data="%pp%Axis::Status::ActualTorque%/pp%">
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [
   "component-monitor-cell"
@@ -428,7 +556,7 @@
 </script>
 </div>
 </div>
-<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="AxisBase_Monitor_Title" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26.2" data-tchmi-height-unit="%" data-tchmi-left="-1" data-tchmi-left-unit="px" data-tchmi-top="-1" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%Component::Config::Name%/pp%">
+<div data-tchmi-grid-row-index="0" data-tchmi-grid-column-index="0" id="AxisBase_Monitor_Title" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26.2" data-tchmi-height-unit="%" data-tchmi-left-unit="px" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text="%pp%Component::Config::Name%/pp%" data-tchmi-background-image-horizontal-alignment="Center" data-tchmi-background-image-vertical-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-class-names" type="application/json">
 [

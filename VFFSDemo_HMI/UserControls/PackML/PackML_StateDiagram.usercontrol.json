@@ -15,6 +15,22 @@
       "propertySetterName": "setPackMLModule",
       "propertyGetterName": "getPackMLModule",
       "refTo": ""
+    },
+    {
+      "name": "data-tchmi-enablecontrol",
+      "displayName": "EnableControl",
+      "visible": true,
+      "type": "tchmi:general#/definitions/BOOL",
+      "category": "",
+      "description": "",
+      "requiredOnCompile": false,
+      "readOnly": false,
+      "bindable": true,
+      "heritable": true,
+      "propertyName": "EnableControl",
+      "propertySetterName": "setEnableControl",
+      "propertyGetterName": "getEnableControl",
+      "refTo": ""
     }
   ],
   "virtualRights": [],
